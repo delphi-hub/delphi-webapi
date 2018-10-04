@@ -22,12 +22,16 @@ object Server extends HttpApp with JsonSupport with AppLogging {
   private val requestLimiter = system.actorOf(ElasticRequestLimiter.props(configuration, actorManager))
   implicit val timeout = Timeout(5, TimeUnit.SECONDS)
 
-   override def routes =
-      path("version") { version } ~
-        path("features") { features } ~
-        pathPrefix("search" / Remaining) { query => search(query) } ~
-        pathPrefix("retrieve" / Remaining) { identifier => retrieve(identifier) } ~
-        pathPrefix("enqueue" / Remaining) { identifier => enqueue(identifier) }
+  override def routes =
+    path("version") {
+      version
+    } ~
+      path("features") {
+        features
+      } ~
+      pathPrefix("search" / Remaining) { query => search(query) } ~
+      pathPrefix("retrieve" / Remaining) { identifier => retrieve(identifier) } ~
+      pathPrefix("enqueue" / Remaining) { identifier => enqueue(identifier) }
 
 
   private def version = {
@@ -48,11 +52,11 @@ object Server extends HttpApp with JsonSupport with AppLogging {
 
   def retrieve(identifier: String) = {
     get {
-      pass {    //TODO: Require authentication here
+      pass { //TODO: Require authentication here
         complete(
           (actorManager ? Retrieve(identifier)).mapTo[String]
         )
-      } ~ extractClientIP{ ip =>
+      } ~ extractClientIP { ip =>
         complete(
           (requestLimiter ? Validate(ip, Retrieve(identifier))).mapTo[String]
         )
@@ -62,7 +66,7 @@ object Server extends HttpApp with JsonSupport with AppLogging {
 
   def enqueue(identifier: String) = {
     get {
-      pass {    //TODO: Require authorization here
+      pass { //TODO: Require authorization here
         complete(
           (actorManager ? Enqueue(identifier)).mapTo[String]
         )
