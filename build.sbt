@@ -1,6 +1,6 @@
 name := "delphi-webapi"
 
-version := "1.0.0-SNAPSHOT"
+version := "0.9.5-SNAPSHOT"
 
 scalaVersion := "2.13.1"
 
