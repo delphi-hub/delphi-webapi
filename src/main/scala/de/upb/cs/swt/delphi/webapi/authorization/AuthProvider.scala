@@ -23,7 +23,7 @@ import pdi.jwt.{Jwt, JwtAlgorithm, JwtClaim}
 object AuthProvider {
 
   implicit val clock: Clock = Clock.systemUTC
-  
+
   def generateJwt(validFor: Long = 1, useGenericName: Boolean = false): String = {
     val claim = JwtClaim()
       .issuedNow
