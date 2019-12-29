@@ -74,9 +74,9 @@ class DelphiRoutes(requestLimiter: RequestLimitScheduler) extends JsonSupport wi
     get {
       parameter(Symbol("pretty").?) { (pretty) =>
         complete(
-          //TODO: Introduce failure concept for feature extractor
-          prettyPrint(pretty, featureExtractor.featureList.toJson)
-        )
+          HttpResponse(StatusCodes.OK,
+            List(headers.`Content-Type`(ContentTypes.`application/json`)),
+            prettyPrint(pretty, featureExtractor.featureList.toJson)))
       }
     }
   }
@@ -89,7 +89,9 @@ class DelphiRoutes(requestLimiter: RequestLimitScheduler) extends JsonSupport wi
           val result = new StatisticsQuery(configuration).retrieveStandardStatistics
           result match {
             case Some(stats) => {
-              prettyPrint(pretty, stats.toJson)
+              HttpResponse(StatusCodes.OK,
+                List(headers.`Content-Type`(ContentTypes.`application/json`)),
+                prettyPrint(pretty, stats.toJson))
             }
             case _ => HttpResponse(StatusCodes.InternalServerError)
           }
@@ -103,7 +105,9 @@ class DelphiRoutes(requestLimiter: RequestLimitScheduler) extends JsonSupport wi
       parameter(Symbol("pretty").?) { (pretty) =>
         complete(
           RetrieveQuery.retrieve(identifier) match {
-            case Some(result) => prettyPrint(pretty, result.toJson)
+            case Some(result) => HttpResponse(StatusCodes.OK,
+              List(headers.`Content-Type`(ContentTypes.`application/json`)),
+              prettyPrint(pretty, result.toJson))
             case None => HttpResponse(StatusCodes.NotFound)
           }
         )
@@ -118,14 +122,17 @@ class DelphiRoutes(requestLimiter: RequestLimitScheduler) extends JsonSupport wi
           log.info(s"Received search query: ${input.query}")
           complete(
             new SearchQuery(configuration, featureExtractor).search(input) match {
-              case Success(result) => prettyPrint(pretty, result.toJson)
+              case Success(result) =>
+                HttpResponse(StatusCodes.OK,
+                  List(headers.`Content-Type`(ContentTypes.`application/json`)),
+                  prettyPrint(pretty, result.toJson))
               case Failure(e) => {
                 e match {
                   case se: SearchError => {
-                    se.toJson
+                    HttpResponse(StatusCodes.ServerError(StatusCodes.InternalServerError.intValue)(se.toJson.toString(), ""))
                   }
                   case _ => {
-                    new SearchError("Search query failed").toJson
+                    HttpResponse(StatusCodes.ServerError(StatusCodes.InternalServerError.intValue)("Search query failed", ""))
                   }
                 }
               }
