@@ -16,38 +16,25 @@
 
 package de.upb.cs.swt.delphi.webapi
 
+import java.io.{BufferedWriter, File, FileWriter}
+
 import com.sksamuel.elastic4s.http.ElasticDsl._
 import com.sksamuel.elastic4s.http.{ElasticClient, RequestSuccess}
 import org.slf4j.LoggerFactory
 import spray.json._
+import de.upb.cs.swt.delphi.webapi.FeatureJson._
+
+import scala.io.Source
 
 class FeatureQuery(configuration: Configuration) {
   private val log = LoggerFactory.getLogger(this.getClass)
 
-  lazy val featureList: Iterable[String] = {
-    val client = ElasticClient(configuration.elasticsearchClientUri)
-    val mappingRequest = client.execute {
-      getMapping(configuration.esProjectIndex)
-    }.await
-
-    mappingRequest match {
-      case RequestSuccess(_, body, _, mappings) => {
-        val bodyJson = body.getOrElse("").parseJson.asJsObject
-
-        bodyJson
-          .fields("delphi").asJsObject
-          .fields("mappings").asJsObject
-          .fields("project").asJsObject
-          .fields("properties").asJsObject
-          .fields("hermes").asJsObject
-          .fields("properties").asJsObject
-          .fields("features").asJsObject
-          .fields("properties").asJsObject.fields.keys
-      }
-      case _ => {
-        log.warn(s"Could not retrieve current feature list. Error was: $mappingRequest")
-        List()
-      }
-    }
-  }
+  lazy val featureList: Iterable[Feature] =
+    Source.fromResource("features.json")
+      .getLines()
+      .mkString("\n")
+      .parseJson
+      .asInstanceOf[JsArray]
+      .elements
+      .map(r => r.convertTo[Feature])
 }
