@@ -1147,721 +1147,721 @@
   {
     "description": "",
     "internalName": "hermes.features.dload (opcode:24)",
-    "name": "dload (opcode:24)"
+    "name": "metrics.bytecode.dload"
   },
   {
     "description": "",
     "internalName": "hermes.features.aload_1 (opcode:43)",
-    "name": "aload_1 (opcode:43)"
+    "name": "metrics.bytecode.aload_1"
   },
   {
     "description": "",
     "internalName": "hermes.features.iflt (opcode:155)",
-    "name": "iflt (opcode:155)"
+    "name": "metrics.bytecode.iflt"
   },
   {
     "description": "",
     "internalName": "hermes.features.putstatic (opcode:179)",
-    "name": "putstatic (opcode:179)"
+    "name": "metrics.bytecode.putstatic"
   },
   {
     "description": "",
     "internalName": "hermes.features.jsr (opcode:168)",
-    "name": "jsr (opcode:168)"
+    "name": "metrics.bytecode.jsr"
   },
   {
     "description": "",
     "internalName": "hermes.features.d2f (opcode:144)",
-    "name": "d2f (opcode:144)"
+    "name": "metrics.bytecode.d2f"
   },
   {
     "description": "",
     "internalName": "hermes.features.ifeq (opcode:153)",
-    "name": "ifeq (opcode:153)"
+    "name": "metrics.bytecode.ifeq"
   },
   {
     "description": "",
     "internalName": "hermes.features.imul (opcode:104)",
-    "name": "imul (opcode:104)"
+    "name": "metrics.bytecode.imul"
   },
   {
     "description": "",
     "internalName": "hermes.features.lload_0 (opcode:30)",
-    "name": "lload_0 (opcode:30)"
+    "name": "metrics.bytecode.lload_0"
   },
   {
     "description": "",
     "internalName": "hermes.features.drem (opcode:115)",
-    "name": "drem (opcode:115)"
+    "name": "metrics.bytecode.drem"
   },
   {
     "description": "",
     "internalName": "hermes.features.aload_2 (opcode:44)",
-    "name": "aload_2 (opcode:44)"
+    "name": "metrics.bytecode.aload_2"
   },
   {
     "description": "",
     "internalName": "hermes.features.swap (opcode:95)",
-    "name": "swap (opcode:95)"
+    "name": "metrics.bytecode.swap"
   },
   {
     "description": "",
     "internalName": "hermes.features.invokestatic (opcode:184)",
-    "name": "invokestatic (opcode:184)"
+    "name": "metrics.bytecode.invokestatic"
   },
   {
     "description": "",
     "internalName": "hermes.features.dup2_x2 (opcode:94)",
-    "name": "dup2_x2 (opcode:94)"
+    "name": "metrics.bytecode.dup2_x2"
   },
   {
     "description": "",
     "internalName": "hermes.features.fmul (opcode:106)",
-    "name": "fmul (opcode:106)"
+    "name": "metrics.bytecode.fmul"
   },
   {
     "description": "",
     "internalName": "hermes.features.pop (opcode:87)",
-    "name": "pop (opcode:87)"
+    "name": "metrics.bytecode.pop"
   },
   {
     "description": "",
     "internalName": "hermes.features.ireturn (opcode:172)",
-    "name": "ireturn (opcode:172)"
+    "name": "metrics.bytecode.ireturn"
   },
   {
     "description": "",
     "internalName": "hermes.features.fconst_0 (opcode:11)",
-    "name": "fconst_0 (opcode:11)"
+    "name": "metrics.bytecode.fconst_0"
   },
   {
     "description": "",
     "internalName": "hermes.features.tableswitch (opcode:170)",
-    "name": "tableswitch (opcode:170)"
+    "name": "metrics.bytecode.tableswitch"
   },
   {
     "description": "",
     "internalName": "hermes.features.iload_2 (opcode:28)",
-    "name": "iload_2 (opcode:28)"
+    "name": "metrics.bytecode.iload_2"
   },
   {
     "description": "",
     "internalName": "hermes.features.lstore_3 (opcode:66)",
-    "name": "lstore_3 (opcode:66)"
+    "name": "metrics.bytecode.lstore_3"
   },
   {
     "description": "",
     "internalName": "hermes.features.iconst_5 (opcode:8)",
-    "name": "iconst_5 (opcode:8)"
+    "name": "metrics.bytecode.iconst_5"
   },
   {
     "description": "",
     "internalName": "hermes.features.fcmpl (opcode:149)",
-    "name": "fcmpl (opcode:149)"
+    "name": "metrics.bytecode.fcmpl"
   },
   {
     "description": "",
     "internalName": "hermes.features.iconst_4 (opcode:7)",
-    "name": "iconst_4 (opcode:7)"
+    "name": "metrics.bytecode.iconst_4"
   },
   {
     "description": "",
     "internalName": "hermes.features.f2i (opcode:139)",
-    "name": "f2i (opcode:139)"
+    "name": "metrics.bytecode.f2i"
   },
   {
     "description": "",
     "internalName": "hermes.features.if_icmpeq (opcode:159)",
-    "name": "if_icmpeq (opcode:159)"
+    "name": "metrics.bytecode.if_icmpeq"
   },
   {
     "description": "",
     "internalName": "hermes.features.anewarray (opcode:189)",
-    "name": "anewarray (opcode:189)"
+    "name": "metrics.bytecode.anewarray"
   },
   {
     "description": "",
     "internalName": "hermes.features.laload (opcode:47)",
-    "name": "laload (opcode:47)"
+    "name": "metrics.bytecode.laload"
   },
   {
     "description": "",
     "internalName": "hermes.features.new (opcode:187)",
-    "name": "new (opcode:187)"
+    "name": "metrics.bytecode.new"
   },
   {
     "description": "",
     "internalName": "hermes.features.dastore (opcode:82)",
-    "name": "dastore (opcode:82)"
+    "name": "metrics.bytecode.dastore"
   },
   {
     "description": "",
     "internalName": "hermes.features.invokespecial (opcode:183)",
-    "name": "invokespecial (opcode:183)"
+    "name": "metrics.bytecode.invokespecial"
   },
   {
     "description": "",
     "internalName": "hermes.features.istore_0 (opcode:59)",
-    "name": "istore_0 (opcode:59)"
+    "name": "metrics.bytecode.istore_0"
   },
   {
     "description": "",
     "internalName": "hermes.features.astore_1 (opcode:76)",
-    "name": "astore_1 (opcode:76)"
+    "name": "metrics.bytecode.astore_1"
   },
   {
     "description": "",
     "internalName": "hermes.features.ifnull (opcode:198)",
-    "name": "ifnull (opcode:198)"
+    "name": "metrics.bytecode.ifnull"
   },
   {
     "description": "",
     "internalName": "hermes.features.multianewarray (opcode:197)",
-    "name": "multianewarray (opcode:197)"
+    "name": "metrics.bytecode.multianewarray"
   },
   {
     "description": "",
     "internalName": "hermes.features.astore_2 (opcode:77)",
-    "name": "astore_2 (opcode:77)"
+    "name": "metrics.bytecode.astore_2"
   },
   {
     "description": "",
     "internalName": "hermes.features.dsub (opcode:103)",
-    "name": "dsub (opcode:103)"
+    "name": "metrics.bytecode.dsub"
   },
   {
     "description": "",
     "internalName": "hermes.features.ixor (opcode:130)",
-    "name": "ixor (opcode:130)"
+    "name": "metrics.bytecode.ixor"
   },
   {
     "description": "",
     "internalName": "hermes.features.ishl (opcode:120)",
-    "name": "ishl (opcode:120)"
+    "name": "metrics.bytecode.ishl"
   },
   {
     "description": "",
     "internalName": "hermes.features.fdiv (opcode:110)",
-    "name": "fdiv (opcode:110)"
+    "name": "metrics.bytecode.fdiv"
   },
   {
     "description": "",
     "internalName": "hermes.features.ladd (opcode:97)",
-    "name": "ladd (opcode:97)"
+    "name": "metrics.bytecode.ladd"
   },
   {
     "description": "",
     "internalName": "hermes.features.bipush (opcode:16)",
-    "name": "bipush (opcode:16)"
+    "name": "metrics.bytecode.bipush"
   },
   {
     "description": "",
     "internalName": "hermes.features.if_icmpne (opcode:160)",
-    "name": "if_icmpne (opcode:160)"
+    "name": "metrics.bytecode.if_icmpne"
   },
   {
     "description": "",
     "internalName": "hermes.features.f2d (opcode:141)",
-    "name": "f2d (opcode:141)"
+    "name": "metrics.bytecode.f2d"
   },
   {
     "description": "",
     "internalName": "hermes.features.astore_0 (opcode:75)",
-    "name": "astore_0 (opcode:75)"
+    "name": "metrics.bytecode.astore_0"
   },
   {
     "description": "",
     "internalName": "hermes.features.dup_x2 (opcode:91)",
-    "name": "dup_x2 (opcode:91)"
+    "name": "metrics.bytecode.dup_x2"
   },
   {
     "description": "",
     "internalName": "hermes.features.lreturn (opcode:173)",
-    "name": "lreturn (opcode:173)"
+    "name": "metrics.bytecode.lreturn"
   },
   {
     "description": "",
     "internalName": "hermes.features.lstore_1 (opcode:64)",
-    "name": "lstore_1 (opcode:64)"
+    "name": "metrics.bytecode.lstore_1"
   },
   {
     "description": "",
     "internalName": "hermes.features.ior (opcode:128)",
-    "name": "ior (opcode:128)"
+    "name": "metrics.bytecode.ior"
   },
   {
     "description": "",
     "internalName": "hermes.features.sastore (opcode:86)",
-    "name": "sastore (opcode:86)"
+    "name": "metrics.bytecode.sastore"
   },
   {
     "description": "",
     "internalName": "hermes.features.d2l (opcode:143)",
-    "name": "d2l (opcode:143)"
+    "name": "metrics.bytecode.d2l"
   },
   {
     "description": "",
     "internalName": "hermes.features.l2i (opcode:136)",
-    "name": "l2i (opcode:136)"
+    "name": "metrics.bytecode.l2i"
   },
   {
     "description": "",
     "internalName": "hermes.features.i2s (opcode:147)",
-    "name": "i2s (opcode:147)"
+    "name": "metrics.bytecode.i2s"
   },
   {
     "description": "",
     "internalName": "hermes.features.dstore_2 (opcode:73)",
-    "name": "dstore_2 (opcode:73)"
+    "name": "metrics.bytecode.dstore_2"
   },
   {
     "description": "",
     "internalName": "hermes.features.d2i (opcode:142)",
-    "name": "d2i (opcode:142)"
+    "name": "metrics.bytecode.d2i"
   },
   {
     "description": "",
     "internalName": "hermes.features.dup_x1 (opcode:90)",
-    "name": "dup_x1 (opcode:90)"
+    "name": "metrics.bytecode.dup_x1"
   },
   {
     "description": "",
     "internalName": "hermes.features.l2d (opcode:138)",
-    "name": "l2d (opcode:138)"
+    "name": "metrics.bytecode.l2d"
   },
   {
     "description": "",
     "internalName": "hermes.features.iconst_2 (opcode:5)",
-    "name": "iconst_2 (opcode:5)"
+    "name": "metrics.bytecode.iconst_2"
   },
   {
     "description": "",
     "internalName": "hermes.features.i2f (opcode:134)",
-    "name": "i2f (opcode:134)"
+    "name": "metrics.bytecode.i2f"
   },
   {
     "description": "",
     "internalName": "hermes.features.putfield (opcode:181)",
-    "name": "putfield (opcode:181)"
+    "name": "metrics.bytecode.putfield"
   },
   {
     "description": "",
     "internalName": "hermes.features.dup2_x1 (opcode:93)",
-    "name": "dup2_x1 (opcode:93)"
+    "name": "metrics.bytecode.dup2_x1"
   },
   {
     "description": "",
     "internalName": "hermes.features.saload (opcode:53)",
-    "name": "saload (opcode:53)"
+    "name": "metrics.bytecode.saload"
   },
   {
     "description": "",
     "internalName": "hermes.features.fstore_0 (opcode:67)",
-    "name": "fstore_0 (opcode:67)"
+    "name": "metrics.bytecode.fstore_0"
   },
   {
     "description": "",
     "internalName": "hermes.features.instanceof (opcode:193)",
-    "name": "instanceof (opcode:193)"
+    "name": "metrics.bytecode.instanceof"
   },
   {
     "description": "",
     "internalName": "hermes.features.fstore_3 (opcode:70)",
-    "name": "fstore_3 (opcode:70)"
+    "name": "metrics.bytecode.fstore_3"
   },
   {
     "description": "",
     "internalName": "hermes.features.iload_0 (opcode:26)",
-    "name": "iload_0 (opcode:26)"
+    "name": "metrics.bytecode.iload_0"
   },
   {
     "description": "",
     "internalName": "hermes.features.arraylength (opcode:190)",
-    "name": "arraylength (opcode:190)"
+    "name": "metrics.bytecode.arraylength"
   },
   {
     "description": "",
     "internalName": "hermes.features.aload_3 (opcode:45)",
-    "name": "aload_3 (opcode:45)"
+    "name": "metrics.bytecode.aload_3"
   },
   {
     "description": "",
     "internalName": "hermes.features.lshr (opcode:123)",
-    "name": "lshr (opcode:123)"
+    "name": "metrics.bytecode.lshr"
   },
   {
     "description": "",
     "internalName": "hermes.features.dmul (opcode:107)",
-    "name": "dmul (opcode:107)"
+    "name": "metrics.bytecode.dmul"
   },
   {
     "description": "",
     "internalName": "hermes.features.faload (opcode:48)",
-    "name": "faload (opcode:48)"
+    "name": "metrics.bytecode.faload"
   },
   {
     "description": "",
     "internalName": "hermes.features.astore (opcode:58)",
-    "name": "astore (opcode:58)"
+    "name": "metrics.bytecode.astore"
   },
   {
     "description": "",
     "internalName": "hermes.features.areturn (opcode:176)",
-    "name": "areturn (opcode:176)"
+    "name": "metrics.bytecode.areturn"
   },
   {
     "description": "",
     "internalName": "hermes.features.lrem (opcode:113)",
-    "name": "lrem (opcode:113)"
+    "name": "metrics.bytecode.lrem"
   },
   {
     "description": "",
     "internalName": "hermes.features.dup (opcode:89)",
-    "name": "dup (opcode:89)"
+    "name": "metrics.bytecode.dup"
   },
   {
     "description": "",
     "internalName": "hermes.features.iconst_3 (opcode:6)",
-    "name": "iconst_3 (opcode:6)"
+    "name": "metrics.bytecode.iconst_3"
   },
   {
     "description": "",
     "internalName": "hermes.features.checkcast (opcode:192)",
-    "name": "checkcast (opcode:192)"
+    "name": "metrics.bytecode.checkcast"
   },
   {
     "description": "",
     "internalName": "hermes.features.lstore (opcode:55)",
-    "name": "lstore (opcode:55)"
+    "name": "metrics.bytecode.lstore"
   },
   {
     "description": "",
     "internalName": "hermes.features.fload_3 (opcode:37)",
-    "name": "fload_3 (opcode:37)"
+    "name": "metrics.bytecode.fload_3"
   },
   {
     "description": "",
     "internalName": "hermes.features.fstore_2 (opcode:69)",
-    "name": "fstore_2 (opcode:69)"
+    "name": "metrics.bytecode.fstore_2"
   },
   {
     "description": "",
     "internalName": "hermes.features.dload_3 (opcode:41)",
-    "name": "dload_3 (opcode:41)"
+    "name": "metrics.bytecode.dload_3"
   },
   {
     "description": "",
     "internalName": "hermes.features.i2c (opcode:146)",
-    "name": "i2c (opcode:146)"
+    "name": "metrics.bytecode.i2c"
   },
   {
     "description": "",
     "internalName": "hermes.features.ifnonnull (opcode:199)",
-    "name": "ifnonnull (opcode:199)"
+    "name": "metrics.bytecode.ifnonnull"
   },
   {
     "description": "",
     "internalName": "hermes.features.dreturn (opcode:175)",
-    "name": "dreturn (opcode:175)"
+    "name": "metrics.bytecode.dreturn"
   },
   {
     "description": "",
     "internalName": "hermes.features.astore_3 (opcode:78)",
-    "name": "astore_3 (opcode:78)"
+    "name": "metrics.bytecode.astore_3"
   },
   {
     "description": "",
     "internalName": "hermes.features.wide (opcode:196)",
-    "name": "wide (opcode:196)"
+    "name": "metrics.bytecode.wide"
   },
   {
     "description": "",
     "internalName": "hermes.features.ret (opcode:169)",
-    "name": "ret (opcode:169)"
+    "name": "metrics.bytecode.ret"
   },
   {
     "description": "",
     "internalName": "hermes.features.jsr_w (opcode:201)",
-    "name": "jsr_w (opcode:201)"
+    "name": "metrics.bytecode.jsr_w"
   },
   {
     "description": "",
     "internalName": "hermes.features.fconst_1 (opcode:12)",
-    "name": "fconst_1 (opcode:12)"
+    "name": "metrics.bytecode.fconst_1"
   },
   {
     "description": "",
     "internalName": "hermes.features.iload_3 (opcode:29)",
-    "name": "iload_3 (opcode:29)"
+    "name": "metrics.bytecode.iload_3"
   },
   {
     "description": "",
     "internalName": "hermes.features.iconst_m1 (opcode:2)",
-    "name": "iconst_m1 (opcode:2)"
+    "name": "metrics.bytecode.iconst_m1"
   },
   {
     "description": "",
     "internalName": "hermes.features.if_icmple (opcode:164)",
-    "name": "if_icmple (opcode:164)"
+    "name": "metrics.bytecode.if_icmple"
   },
   {
     "description": "",
     "internalName": "hermes.features.iload_1 (opcode:27)",
-    "name": "iload_1 (opcode:27)"
+    "name": "metrics.bytecode.iload_1"
   },
   {
     "description": "",
     "internalName": "hermes.features.if_icmpge (opcode:162)",
-    "name": "if_icmpge (opcode:162)"
+    "name": "metrics.bytecode.if_icmpge"
   },
   {
     "description": "",
     "internalName": "hermes.features.isub (opcode:100)",
-    "name": "isub (opcode:100)"
+    "name": "metrics.bytecode.isub"
   },
   {
     "description": "",
     "internalName": "hermes.features.ddiv (opcode:111)",
-    "name": "ddiv (opcode:111)"
+    "name": "metrics.bytecode.ddiv"
   },
   {
     "description": "",
     "internalName": "hermes.features.monitorenter (opcode:194)",
-    "name": "monitorenter (opcode:194)"
+    "name": "metrics.bytecode.monitorenter"
   },
   {
     "description": "",
     "internalName": "hermes.features.fstore_1 (opcode:68)",
-    "name": "fstore_1 (opcode:68)"
+    "name": "metrics.bytecode.fstore_1"
   },
   {
     "description": "",
     "internalName": "hermes.features.freturn (opcode:174)",
-    "name": "freturn (opcode:174)"
+    "name": "metrics.bytecode.freturn"
   },
   {
     "description": "",
     "internalName": "hermes.features.iinc (opcode:132)",
-    "name": "iinc (opcode:132)"
+    "name": "metrics.bytecode.iinc"
   },
   {
     "description": "",
     "internalName": "hermes.features.i2d (opcode:135)",
-    "name": "i2d (opcode:135)"
+    "name": "metrics.bytecode.i2d"
   },
   {
     "description": "",
     "internalName": "hermes.features.iushr (opcode:124)",
-    "name": "iushr (opcode:124)"
+    "name": "metrics.bytecode.iushr"
   },
   {
     "description": "",
     "internalName": "hermes.features.if_icmpgt (opcode:163)",
-    "name": "if_icmpgt (opcode:163)"
+    "name": "metrics.bytecode.if_icmpgt"
   },
   {
     "description": "",
     "internalName": "hermes.features.iand (opcode:126)",
-    "name": "iand (opcode:126)"
+    "name": "metrics.bytecode.iand"
   },
   {
     "description": "",
     "internalName": "hermes.features.dload_2 (opcode:40)",
-    "name": "dload_2 (opcode:40)"
+    "name": "metrics.bytecode.dload_2"
   },
   {
     "description": "",
     "internalName": "hermes.features.istore_1 (opcode:60)",
-    "name": "istore_1 (opcode:60)"
+    "name": "metrics.bytecode.istore_1"
   },
   {
     "description": "",
     "internalName": "hermes.features.monitorexit (opcode:195)",
-    "name": "monitorexit (opcode:195)"
+    "name": "metrics.bytecode.monitorexit"
   },
   {
     "description": "",
     "internalName": "hermes.features.fneg (opcode:118)",
-    "name": "fneg (opcode:118)"
+    "name": "metrics.bytecode.fneg"
   },
   {
     "description": "",
     "internalName": "hermes.features.istore (opcode:54)",
-    "name": "istore (opcode:54)"
+    "name": "metrics.bytecode.istore"
   },
   {
     "description": "",
     "internalName": "hermes.features.lcmp (opcode:148)",
-    "name": "lcmp (opcode:148)"
+    "name": "metrics.bytecode.lcmp"
   },
   {
     "description": "",
     "internalName": "hermes.features.fcmpg (opcode:150)",
-    "name": "fcmpg (opcode:150)"
+    "name": "metrics.bytecode.fcmpg"
   },
   {
     "description": "",
     "internalName": "hermes.features.caload (opcode:52)",
-    "name": "caload (opcode:52)"
+    "name": "metrics.bytecode.caload"
   },
   {
     "description": "",
     "internalName": "hermes.features.aload (opcode:25)",
-    "name": "aload (opcode:25)"
+    "name": "metrics.bytecode.aload"
   },
   {
     "description": "",
     "internalName": "hermes.features.fload_2 (opcode:36)",
-    "name": "fload_2 (opcode:36)"
+    "name": "metrics.bytecode.fload_2"
   },
   {
     "description": "",
     "internalName": "hermes.features.lxor (opcode:131)",
-    "name": "lxor (opcode:131)"
+    "name": "metrics.bytecode.lxor"
   },
   {
     "description": "",
     "internalName": "hermes.features.ldc_w (opcode:19)",
-    "name": "ldc_w (opcode:19)"
+    "name": "metrics.bytecode.ldc_w"
   },
   {
     "description": "",
     "internalName": "hermes.features.lload_2 (opcode:32)",
-    "name": "lload_2 (opcode:32)"
+    "name": "metrics.bytecode.lload_2"
   },
   {
     "description": "",
     "internalName": "hermes.features.lsub (opcode:101)",
-    "name": "lsub (opcode:101)"
+    "name": "metrics.bytecode.lsub"
   },
   {
     "description": "",
     "internalName": "hermes.features.iaload (opcode:46)",
-    "name": "iaload (opcode:46)"
+    "name": "metrics.bytecode.iaload"
   },
   {
     "description": "",
     "internalName": "hermes.features.lload_3 (opcode:33)",
-    "name": "lload_3 (opcode:33)"
+    "name": "metrics.bytecode.lload_3"
   },
   {
     "description": "",
     "internalName": "hermes.features.fstore (opcode:56)",
-    "name": "fstore (opcode:56)"
+    "name": "metrics.bytecode.fstore"
   },
   {
     "description": "",
     "internalName": "hermes.features.iastore (opcode:79)",
-    "name": "iastore (opcode:79)"
+    "name": "metrics.bytecode.iastore"
   },
   {
     "description": "",
     "internalName": "hermes.features.fastore (opcode:81)",
-    "name": "fastore (opcode:81)"
+    "name": "metrics.bytecode.fastore"
   },
   {
     "description": "",
     "internalName": "hermes.features.dconst_0 (opcode:14)",
-    "name": "dconst_0 (opcode:14)"
+    "name": "metrics.bytecode.dconst_0"
   },
   {
     "description": "",
     "internalName": "hermes.features.ifne (opcode:154)",
-    "name": "ifne (opcode:154)"
+    "name": "metrics.bytecode.ifne"
   },
   {
     "description": "",
     "internalName": "hermes.features.lconst_0 (opcode:9)",
-    "name": "lconst_0 (opcode:9)"
+    "name": "metrics.bytecode.lconst_0"
   },
   {
     "description": "",
     "internalName": "hermes.features.i2b (opcode:145)",
-    "name": "i2b (opcode:145)"
+    "name": "metrics.bytecode.i2b"
   },
   {
     "description": "",
     "internalName": "hermes.features.ishr (opcode:122)",
-    "name": "ishr (opcode:122)"
+    "name": "metrics.bytecode.ishr"
   },
   {
     "description": "",
     "internalName": "hermes.features.lneg (opcode:117)",
-    "name": "lneg (opcode:117)"
+    "name": "metrics.bytecode.lneg"
   },
   {
     "description": "",
     "internalName": "hermes.features.lconst_1 (opcode:10)",
-    "name": "lconst_1 (opcode:10)"
+    "name": "metrics.bytecode.lconst_1"
   },
   {
     "description": "",
     "internalName": "hermes.features.athrow (opcode:191)",
-    "name": "athrow (opcode:191)"
+    "name": "metrics.bytecode.athrow"
   },
   {
     "description": "",
     "internalName": "hermes.features.bastore (opcode:84)",
-    "name": "bastore (opcode:84)"
+    "name": "metrics.bytecode.bastore"
   },
   {
     "description": "",
     "internalName": "hermes.features.goto_w (opcode:200)",
-    "name": "goto_w (opcode:200)"
+    "name": "metrics.bytecode.goto_w"
   },
   {
     "description": "",
     "internalName": "hermes.features.dstore_3 (opcode:74)",
-    "name": "dstore_3 (opcode:74)"
+    "name": "metrics.bytecode.dstore_3"
   },
   {
     "description": "",
     "internalName": "hermes.features.dadd (opcode:99)",
-    "name": "dadd (opcode:99)"
+    "name": "metrics.bytecode.dadd"
   },
   {
     "description": "",
     "internalName": "hermes.features.if_acmpne (opcode:166)",
-    "name": "if_acmpne (opcode:166)"
+    "name": "metrics.bytecode.if_acmpne"
   },
   {
     "description": "",
     "internalName": "hermes.features.iload (opcode:21)",
-    "name": "iload (opcode:21)"
+    "name": "metrics.bytecode.iload"
   },
   {
     "description": "",
     "internalName": "hermes.features.ifge (opcode:156)",
-    "name": "ifge (opcode:156)"
+    "name": "metrics.bytecode.ifge"
   },
   {
     "description": "",
     "internalName": "hermes.features.return (opcode:177)",
-    "name": "return (opcode:177)"
+    "name": "metrics.bytecode.return"
   },
   {
     "description": "",
     "internalName": "hermes.features.sipush (opcode:17)",
-    "name": "sipush (opcode:17)"
+    "name": "metrics.bytecode.sipush"
   },
   {
     "description": "",
     "internalName": "hermes.features.frem (opcode:114)",
-    "name": "frem (opcode:114)"
+    "name": "metrics.bytecode.frem"
   },
   {
     "description": "",
     "internalName": "hermes.features.lookupswitch (opcode:171)",
-    "name": "lookupswitch (opcode:171)"
+    "name": "metrics.bytecode.lookupswitch"
   },
   {
     "description": "",
     "internalName": "hermes.features.lload (opcode:22)",
-    "name": "lload (opcode:22)"
+    "name": "metrics.bytecode.lload"
   },
   {
     "description": "",
     "internalName": "hermes.features.ldc2_w (opcode:20)",
-    "name": "ldc2_w (opcode:20)"
+    "name": "metrics.bytecode.ldc2_w"
   }
 ]
