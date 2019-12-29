@@ -1,4 +1,4 @@
-// Copyright (C) 2018 The Delphi Team.
+// Copyright (C) 2019 The Delphi Team.
 // See the LICENCE file distributed with this work for additional
 // information regarding copyright ownership.
 //
@@ -13,28 +13,14 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-
 package de.upb.cs.swt.delphi.webapi
 
-import java.io.{BufferedWriter, File, FileWriter}
+import spray.json.DefaultJsonProtocol
 
-import com.sksamuel.elastic4s.http.ElasticDsl._
-import com.sksamuel.elastic4s.http.{ElasticClient, RequestSuccess}
-import org.slf4j.LoggerFactory
-import spray.json._
-import de.upb.cs.swt.delphi.webapi.FeatureJson._
+case class Feature(name : String, description : String)
+case class InternalFeature(name : String, description: String, internalName : String)
 
-import scala.io.Source
-
-class FeatureQuery(configuration: Configuration) {
-  private val log = LoggerFactory.getLogger(this.getClass)
-
-  lazy val featureList: Iterable[Feature] =
-    Source.fromResource("features.json")
-      .getLines()
-      .mkString("\n")
-      .parseJson
-      .asInstanceOf[JsArray]
-      .elements
-      .map(r => r.convertTo[Feature])
+object FeatureJson extends DefaultJsonProtocol {
+  implicit val featureFormat = jsonFormat2(Feature)
+  implicit val internalFeatureFormat = jsonFormat3(InternalFeature)
 }

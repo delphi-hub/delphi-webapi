@@ -22,20 +22,42 @@ import com.sksamuel.elastic4s.http.{ElasticClient, RequestFailure, RequestSucces
 import com.sksamuel.elastic4s.searches.queries.{NoopQuery, Query}
 import de.upb.cs.swt.delphi.webapi.artifacts.{Artifact, ArtifactTransformer}
 import de.upb.cs.swt.delphi.webapi.search.querylanguage._
-import de.upb.cs.swt.delphi.webapi.{Configuration, FeatureQuery}
+import de.upb.cs.swt.delphi.webapi.{Configuration, Feature, FeatureQuery, InternalFeature}
+import spray.json.JsArray
 
+import scala.io.Source
 import scala.util.{Failure, Success, Try}
+
+import spray.json._
+import de.upb.cs.swt.delphi.webapi.FeatureJson._
+
 
 class SearchQuery(configuration: Configuration, featureExtractor: FeatureQuery) {
   private val client = ElasticClient(configuration.elasticsearchClientUri)
 
+  lazy val internalFeatures = Source.fromResource("features.json")
+    .getLines()
+    .mkString("\n")
+    .parseJson
+    .asInstanceOf[JsArray]
+    .elements
+    .map(r => r.convertTo[InternalFeature])
+
+  lazy val externalToInternalFeature = internalFeatures.map(i => i.name -> i.internalName).toMap
+
   private def checkAndExecuteParsedQuery(ast: CombinatorialExpr, limit: Int): Try[SearchHits] = {
     val fields = collectFieldNames(ast)
-    if (fields.diff(featureExtractor.featureList.toSeq).size > 0) return Failure(new IllegalArgumentException("Unknown field name used."))
+
+    val publicFieldNames = internalFeatures.map(i => i.name)
+    val invalidFields = fields.toSet.filter(f => !publicFieldNames.contains(f))
+
+    if (invalidFields.size > 0) return Failure(new IllegalArgumentException(s"Unknown field name(s) used. (${invalidFields.mkString(",")})"))
+
+    val translatedFields = fields.toSet.map(externalToInternalFeature(_))
 
     val query = searchWithType(configuration.esProjectIndex)
       .query(translate(ast))
-      .sourceInclude(ArtifactTransformer.baseFields ++ fields.intersect(featureExtractor.featureList.toSeq).map(i => addPrefix(i)))
+      .sourceInclude(ArtifactTransformer.baseFields ++ translatedFields)
       .limit(limit)
 
     val response = client.execute {
@@ -47,8 +69,6 @@ class SearchQuery(configuration: Configuration, featureExtractor: FeatureQuery) 
       case r => Failure(new IllegalArgumentException(r.toString))
     }
   }
-
-  private def addPrefix(fieldName: String): String = s"hermes.features.$fieldName"
 
   private def translate(node: CombinatorialExpr): Query = {
     node match {
@@ -79,13 +99,13 @@ class SearchQuery(configuration: Configuration, featureExtractor: FeatureQuery) 
           )
         )
       }
-      case EqualExpr(field, value) => matchQuery(addPrefix(field.fieldName), value)
-      case NotEqualExpr(field, value) => bool(not(matchQuery(addPrefix(field.fieldName), value)))
-      case GreaterThanExpr(field, value) => rangeQuery(addPrefix(field.fieldName)).gt(value.toLong)
-      case GreaterOrEqualExpr(field, value) => rangeQuery(addPrefix(field.fieldName)).gte(value.toLong)
-      case LessThanExpr(field, value) => rangeQuery(addPrefix(field.fieldName)).lt(value.toLong)
-      case LessOrEqualExpr(field, value) => rangeQuery(addPrefix(field.fieldName)).lte(value.toLong)
-      case LikeExpr(field, value) => prefixQuery(addPrefix(field.fieldName), value)
+      case EqualExpr(field, value) => matchQuery(externalToInternalFeature(field.fieldName), value)
+      case NotEqualExpr(field, value) => bool(not(matchQuery(externalToInternalFeature(field.fieldName), value)))
+      case GreaterThanExpr(field, value) => rangeQuery(externalToInternalFeature(field.fieldName)).gt(value.toLong)
+      case GreaterOrEqualExpr(field, value) => rangeQuery(externalToInternalFeature(field.fieldName)).gte(value.toLong)
+      case LessThanExpr(field, value) => rangeQuery(externalToInternalFeature(field.fieldName)).lt(value.toLong)
+      case LessOrEqualExpr(field, value) => rangeQuery(externalToInternalFeature(field.fieldName)).lte(value.toLong)
+      case LikeExpr(field, value) => prefixQuery(externalToInternalFeature(field.fieldName), value)
       case _ => NoopQuery
     }
   }
