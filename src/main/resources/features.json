@@ -37,7 +37,7 @@
   {
     "description": "",
     "internalName": "hermes.features.Class File\nJava 5",
-    "name": "Class File\nJava 5"
+    "name": "metrics.classversion.5"
   },
   {
     "description": "",
@@ -72,7 +72,7 @@
   {
     "description": "",
     "internalName": "hermes.features.unused public fields",
-    "name": "unused public fields"
+    "name": "metrics.unusedfield.public"
   },
   {
     "description": "",
@@ -87,7 +87,7 @@
   {
     "description": "",
     "internalName": "hermes.features.Unsafe - Array",
-    "name": "Unsafe - Array"
+    "name": "metrics.api.unsafe.array"
   },
   {
     "description": "",
@@ -97,12 +97,12 @@
   {
     "description": "",
     "internalName": "hermes.features.Unsafe - Heap",
-    "name": "Unsafe - Heap"
+    "name": "metrics.api.unsafe.heap"
   },
   {
     "description": "",
     "internalName": "hermes.features.Unsafe - Offset",
-    "name": "Unsafe - Offset"
+    "name": "metrics.api.unsafe.offset"
   },
   {
     "description": "",
@@ -127,12 +127,12 @@
   {
     "description": "",
     "internalName": "hermes.features.unused package visible fields",
-    "name": "unused package visible fields"
+    "name": "metrics.unusedfield.packagevisible"
   },
   {
     "description": "",
     "internalName": "hermes.features.cryptographic key handling",
-    "name": "cryptographic key handling"
+    "name": "metrics.api.cryptographic key handling"
   },
   {
     "description": "",
@@ -237,7 +237,7 @@
   {
     "description": "",
     "internalName": "hermes.features.Unsafe - Ordered Put",
-    "name": "Unsafe - Ordered Put"
+    "name": "metrics.api.unsafe.orderedput"
   },
   {
     "description": "",
@@ -257,7 +257,7 @@
   {
     "description": "",
     "internalName": "hermes.features.unused protected fields",
-    "name": "unused protected fields"
+    "name": "metrics.unusedfield.protected"
   },
   {
     "description": "",
@@ -332,7 +332,7 @@
   {
     "description": "",
     "internalName": "hermes.features.Unsafe - compareAndSwap",
-    "name": "Unsafe - compareAndSwap"
+    "name": "metrics.api.unsafe.compareAndSwap"
   },
   {
     "description": "",
@@ -347,17 +347,17 @@
   {
     "description": "",
     "internalName": "hermes.features.Class File\nJava 7",
-    "name": "Class File\nJava 7"
+    "name": "metrics.classversion.7"
   },
   {
     "description": "",
     "internalName": "hermes.features.Class File\nJava 6",
-    "name": "Class File\nJava 6"
+    "name": "metrics.classversion.6"
   },
   {
     "description": "",
     "internalName": "hermes.features.Unsafe - Off-Heap",
-    "name": "Unsafe - Off-Heap"
+    "name": "metrics.api.unsafe.offheap"
   },
   {
     "description": "",
@@ -372,7 +372,7 @@
   {
     "description": "",
     "internalName": "hermes.features.Unsafe - Heap Get",
-    "name": "Unsafe - Heap Get"
+    "name": "metrics.api.unsafe.heapget"
   },
   {
     "description": "",
@@ -497,7 +497,7 @@
   {
     "description": "",
     "internalName": "hermes.features.Unsafe - Fence",
-    "name": "Unsafe - Fence"
+    "name": "metrics.api.unsafe.fence"
   },
   {
     "description": "",
@@ -532,7 +532,7 @@
   {
     "description": "",
     "internalName": "hermes.features.Unsafe - Fetch & Add",
-    "name": "Unsafe - Fetch & Add"
+    "name": "metrics.api.unsafe.fetchAndAdd"
   },
   {
     "description": "",
@@ -582,7 +582,7 @@
   {
     "description": "",
     "internalName": "hermes.features.Unsafe - Alloc",
-    "name": "Unsafe - Alloc"
+    "name": "metrics.api.unsafe.alloc"
   },
   {
     "description": "",
@@ -592,7 +592,7 @@
   {
     "description": "",
     "internalName": "hermes.features.Unsafe - Throw",
-    "name": "Unsafe - Throw"
+    "name": "metrics.api.unsafe.throw"
   },
   {
     "description": "",
@@ -612,7 +612,7 @@
   {
     "description": "",
     "internalName": "hermes.features.Unsafe - Heap Put",
-    "name": "Unsafe - Heap Put"
+    "name": "metrics.api.unsafe.heapput"
   },
   {
     "description": "",
@@ -697,7 +697,12 @@
   {
     "description": "",
     "internalName": "hermes.features.Class File\nJava 8",
-    "name": "Class File\nJava 8"
+    "name": "metrics.classversion.8"
+  },
+  {
+    "description": "",
+    "internalName": "Class File JDK 1.1 (JDK 1.0.2)",
+    "name": "metrics.classversion.1.1"
   },
   {
     "description": "",
@@ -727,7 +732,7 @@
   {
     "description": "",
     "internalName": "hermes.features.Unsafe - Volatile Put",
-    "name": "Unsafe - Volatile Put"
+    "name": "metrics.api.unsafe.volatileput"
   },
   {
     "description": "",
@@ -737,7 +742,7 @@
   {
     "description": "",
     "internalName": "hermes.features.Unsafe - Class",
-    "name": "Unsafe - Class"
+    "name": "metrics.api.unsafe.class"
   },
   {
     "description": "",
@@ -752,7 +757,7 @@
   {
     "description": "",
     "internalName": "hermes.features.Unsafe - Monitor",
-    "name": "Unsafe - Monitor"
+    "name": "metrics.api.unsafe.monitor"
   },
   {
     "description": "",
@@ -812,7 +817,7 @@
   {
     "description": "",
     "internalName": "hermes.features.Class File\nJava 9",
-    "name": "Class File\nJava 9"
+    "name": "metrics.classversion.9"
   },
   {
     "description": "",
@@ -827,7 +832,7 @@
   {
     "description": "",
     "internalName": "hermes.features.Class File\nJDK 1",
-    "name": "Class File\nJDK 1"
+    "name": "metrics.classversion.1"
   },
   {
     "description": "",
