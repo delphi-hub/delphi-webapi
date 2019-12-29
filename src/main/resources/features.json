@@ -1,0 +1,1872 @@
+[
+  {
+    "name" :  "source",
+    "description": "Package source",
+    "internalName": "source"
+  },
+  {
+    "name" :  "maven.groupId",
+    "description": "GroupId of a Maven Package",
+    "internalName": "identifier.groupId"
+  },
+  {
+    "name" :  "maven.artifactId",
+    "description": "ArtifactId of a Maven Package",
+    "internalName": "identifier.artifactid"
+  },
+  {
+    "name" :  "maven.version",
+    "description": "Version of a Maven Package",
+    "internalName": "identifier.version"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.2-3 McCabe",
+    "name": "2-3 McCabe"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Augmented Type",
+    "name": "Augmented Type"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Environment",
+    "name": "Environment"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Class File\nJava 5",
+    "name": "metrics.classversion.5"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.custom ClassLoader implementation",
+    "name": "custom ClassLoader implementation"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.FanIn - Category 1",
+    "name": "FanIn - Category 1"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.bridge methods",
+    "name": "bridge methods"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.1-3 FPC",
+    "name": "1-3 FPC"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.module (Java >9)",
+    "name": "module (Java >9)"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Canopy",
+    "name": "Canopy"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.unused public fields",
+    "name": "metrics.unusedfield.public"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Mutually-recursive Data Structure\n2 Types",
+    "name": "Mutually-recursive Data Structure\n2 Types"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Mutually-recursive Data Structure\nmore than 4 Types",
+    "name": "Mutually-recursive Data Structure\nmore than 4 Types"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Unsafe - Array",
+    "name": "metrics.api.unsafe.array"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.non-functional interface\nwith default methods (Java >8)",
+    "name": "non-functional interface\nwith default methods (Java >8)"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Unsafe - Heap",
+    "name": "metrics.api.unsafe.heap"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Unsafe - Offset",
+    "name": "metrics.api.unsafe.offset"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Method with Infinite Loop",
+    "name": "Method with Infinite Loop"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.instance methods",
+    "name": "instance methods"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.package visible fields\nonly used by defining type",
+    "name": "package visible fields\nonly used by defining type"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.FanIn/FanOut - Category 6",
+    "name": "FanIn/FanOut - Category 6"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.unused package visible fields",
+    "name": "metrics.unusedfield.packagevisible"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.cryptographic key handling",
+    "name": "metrics.api.cryptographic key handling"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.FanIn - Category 2",
+    "name": "FanIn - Category 2"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.>10 McCabe",
+    "name": ">10 McCabe"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.using KeyStore",
+    "name": "using KeyStore"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Joiner",
+    "name": "Joiner"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Very Small Inheritance Tree",
+    "name": "Very Small Inheritance Tree"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.FanOut - Category 2",
+    "name": "FanOut - Category 2"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.>10 CPP",
+    "name": ">10 CPP"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Very Large Inheritance Tree",
+    "name": "Very Large Inheritance Tree"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.4-10 McCabe",
+    "name": "4-10 McCabe"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Pseudo Class",
+    "name": "Pseudo Class"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.4-10 FPC",
+    "name": "4-10 FPC"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.makes fields accessible",
+    "name": "makes fields accessible"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.varargs methods",
+    "name": "varargs methods"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Function Pointer",
+    "name": "Function Pointer"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.synthetic methods",
+    "name": "synthetic methods"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.>10 NOC",
+    "name": ">10 NOC"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.FanOut - Category 4",
+    "name": "FanOut - Category 4"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.State Machine",
+    "name": "State Machine"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.4-10 NOC",
+    "name": "4-10 NOC"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.1-3 CPP",
+    "name": "1-3 CPP"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Unsafe - Ordered Put",
+    "name": "metrics.api.unsafe.orderedput"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.java",
+    "name": "java"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.method handle invocation",
+    "name": "method handle invocation"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.(standard) interface",
+    "name": "(standard) interface"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.unused protected fields",
+    "name": "metrics.unusedfield.protected"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Restricted Creation",
+    "name": "Restricted Creation"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Medium Inheritance Tree",
+    "name": "Medium Inheritance Tree"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.0 NOC",
+    "name": "0 NOC"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Huge Inheritance Tree",
+    "name": "Huge Inheritance Tree"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.1-3 MPC",
+    "name": "1-3 MPC"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Usage of ThreadGroup API",
+    "name": "Usage of ThreadGroup API"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Cobol Like",
+    "name": "Cobol Like"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Overrider",
+    "name": "Overrider"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.4-10 MPC",
+    "name": "4-10 MPC"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Misc",
+    "name": "Misc"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.FanIn/FanOut - Category 3",
+    "name": "FanIn/FanOut - Category 3"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.non-functional interface\nwith static methods (Java >8)",
+    "name": "non-functional interface\nwith static methods (Java >8)"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Mutually-recursive Data Structure\n3 Types",
+    "name": "Mutually-recursive Data Structure\n3 Types"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Box",
+    "name": "Box"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Unsafe - compareAndSwap",
+    "name": "metrics.api.unsafe.compareAndSwap"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Stateless",
+    "name": "Stateless"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.FanIn - Category 6",
+    "name": "FanIn - Category 6"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Class File\nJava 7",
+    "name": "metrics.classversion.7"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Class File\nJava 6",
+    "name": "metrics.classversion.6"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Unsafe - Off-Heap",
+    "name": "metrics.api.unsafe.offheap"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Nontrivial Class",
+    "name": "Nontrivial Class"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.(concrete) classes",
+    "name": "(concrete) classes"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Unsafe - Heap Get",
+    "name": "metrics.api.unsafe.heapget"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.retrieve classes information",
+    "name": "retrieve classes information"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.using SecureRandom",
+    "name": "using SecureRandom"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.FanOut - Category 5",
+    "name": "FanOut - Category 5"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Method With\nLocal Variable Table",
+    "name": "Method With\nLocal Variable Table"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.using MessageDigest",
+    "name": "using MessageDigest"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.FanOut - Category 1",
+    "name": "FanOut - Category 1"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Class File With\nSource Attribute",
+    "name": "Class File With\nSource Attribute"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Large Inheritance Tree",
+    "name": "Large Inheritance Tree"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Size of the Inheritance Tree Unknown",
+    "name": "Size of the Inheritance Tree Unknown"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.accessing resources",
+    "name": "accessing resources"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Immutable",
+    "name": "Immutable"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.static initializers",
+    "name": "static initializers"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Never Returns Normally",
+    "name": "Never Returns Normally"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Data Manager",
+    "name": "Data Manager"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.public fields\nonly used by defininig type ",
+    "name": "public fields\nonly used by defininig type "
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.FanIn/FanOut - Category 1",
+    "name": "FanIn/FanOut - Category 1"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.sun",
+    "name": "sun"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Object-based Thread Notification",
+    "name": "Object-based Thread Notification"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.linear methods (McCabe)",
+    "name": "linear methods (McCabe)"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.FanIn/FanOut - Category 4",
+    "name": "FanIn/FanOut - Category 4"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.abstract classes",
+    "name": "abstract classes"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Retrieving the SystemClassLoader",
+    "name": "Retrieving the SystemClassLoader"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Taxonomy",
+    "name": "Taxonomy"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.FanIn/FanOut - Category 2",
+    "name": "FanIn/FanOut - Category 2"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Unsafe - Fence",
+    "name": "metrics.api.unsafe.fence"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Record",
+    "name": "Record"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.using Mac",
+    "name": "using Mac"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.marker interfaces",
+    "name": "marker interfaces"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Method With\nLine Number Table",
+    "name": "Method With\nLine Number Table"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.FanOut - Category 6",
+    "name": "FanOut - Category 6"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Sink",
+    "name": "Sink"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Unsafe - Fetch & Add",
+    "name": "metrics.api.unsafe.fetchAndAdd"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.FanIn - Category 3",
+    "name": "FanIn - Category 3"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.appending class loader search",
+    "name": "appending class loader search"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.makes methods or constructors accessible",
+    "name": "makes methods or constructors accessible"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.reflective field read",
+    "name": "reflective field read"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.enumerations",
+    "name": "enumerations"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.simple functional interfaces\n(single abstract method (SAM) interface)",
+    "name": "simple functional interfaces\n(single abstract method (SAM) interface)"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Sound",
+    "name": "Sound"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.4-10 CPP",
+    "name": "4-10 CPP"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.annotations",
+    "name": "annotations"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Unsafe - Alloc",
+    "name": "metrics.api.unsafe.alloc"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Trait",
+    "name": "Trait"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Unsafe - Throw",
+    "name": "metrics.api.unsafe.throw"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.JavaFX",
+    "name": "JavaFX"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.javax",
+    "name": "javax"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Compound Box",
+    "name": "Compound Box"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Unsafe - Heap Put",
+    "name": "metrics.api.unsafe.heapput"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Common State",
+    "name": "Common State"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Designator",
+    "name": "Designator"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.AWT",
+    "name": "AWT"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.SWT",
+    "name": "SWT"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Trivial Class",
+    "name": "Trivial Class"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.creation and execution of\njava",
+    "name": "creation and execution of\njava"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Function Object",
+    "name": "Function Object"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.constructors",
+    "name": "constructors"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.using Signature",
+    "name": "using Signature"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Method With\nLocal Variable Type Table",
+    "name": "Method With\nLocal Variable Type Table"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Retrieving some ClassLoader",
+    "name": "Retrieving some ClassLoader"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Sampler",
+    "name": "Sampler"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Implementor",
+    "name": "Implementor"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.reflective field write",
+    "name": "reflective field write"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.reflective instance creation",
+    "name": "reflective instance creation"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Self-recursive Data Structure",
+    "name": "Self-recursive Data Structure"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Class File\nJava 8",
+    "name": "metrics.classversion.8"
+  },
+  {
+    "description": "",
+    "internalName": "Class File JDK 1.1 (JDK 1.0.2)",
+    "name": "metrics.classversion.1.1"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.FanIn/FanOut - Category 5",
+    "name": "FanIn/FanOut - Category 5"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.protected fields\nonly used by defining type",
+    "name": "protected fields\nonly used by defining type"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Mutually-recursive Data Structure\n4 Types",
+    "name": "Mutually-recursive Data Structure\n4 Types"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Process",
+    "name": "Process"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.JVM exit",
+    "name": "JVM exit"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Unsafe - Volatile Put",
+    "name": "metrics.api.unsafe.volatileput"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.using Certificates",
+    "name": "using Certificates"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Unsafe - Class",
+    "name": "metrics.api.unsafe.class"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.static methods\n(not including static initializers)",
+    "name": "static methods\n(not including static initializers)"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Pure Type",
+    "name": "Pure Type"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Unsafe - Monitor",
+    "name": "metrics.api.unsafe.monitor"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.FanIn - Category 4",
+    "name": "FanIn - Category 4"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Extender",
+    "name": "Extender"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.>10 MPC",
+    "name": ">10 MPC"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.0 FPC",
+    "name": "0 FPC"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.makes an AccessibleObject accessible\n(exact type unknown)",
+    "name": "makes an AccessibleObject accessible\n(exact type unknown)"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.native methods",
+    "name": "native methods"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.FanIn - Category 5",
+    "name": "FanIn - Category 5"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.FanOut - Category 3",
+    "name": "FanOut - Category 3"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Outline",
+    "name": "Outline"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Network sockets",
+    "name": "Network sockets"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.1-3 NOC",
+    "name": "1-3 NOC"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Class File\nJava 9",
+    "name": "metrics.classversion.9"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Swing",
+    "name": "Swing"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.0 MPC",
+    "name": "0 MPC"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Class File\nJDK 1",
+    "name": "metrics.classversion.1"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.class file retransformation",
+    "name": "class file retransformation"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.define new classes/packages",
+    "name": "define new classes/packages"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Small Inheritance Tree",
+    "name": "Small Inheritance Tree"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.instrumenting native methods",
+    "name": "instrumenting native methods"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Native Libraries",
+    "name": "Native Libraries"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.aconst_null (opcode:1)",
+    "name": "metrics.bytecode.aconst_null"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.lload_1 (opcode:31)",
+    "name": "metrics.bytecode.lload_1"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.dcmpl (opcode:151)",
+    "name": "metrics.bytecode.dcmpl"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.invokedynamic (opcode:186)",
+    "name": "metrics.bytecode.invokedynamic"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.dstore_0 (opcode:71)",
+    "name": "metrics.bytecode.dstore_0"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.aastore (opcode:83)",
+    "name": "metrics.bytecode.aastore"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.land (opcode:127)",
+    "name": "metrics.bytecode.land"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.lstore_2 (opcode:65)",
+    "name": "metrics.bytecode.lstore_2"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.dup2 (opcode:92)",
+    "name": "metrics.bytecode.dup2"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.invokeinterface (opcode:185)",
+    "name": "metrics.bytecode.invokeinterface"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.castore (opcode:85)",
+    "name": "metrics.bytecode.castore"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.lshl (opcode:121)",
+    "name": "metrics.bytecode.lshl"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.irem (opcode:112)",
+    "name": "metrics.bytecode.irem"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.lushr (opcode:125)",
+    "name": "metrics.bytecode.lushr"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.dload_0 (opcode:38)",
+    "name": "metrics.bytecode.dload_0"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.ineg (opcode:116)",
+    "name": "metrics.bytecode.ineg"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.iconst_0 (opcode:3)",
+    "name": "metrics.bytecode.iconst_0"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.lastore (opcode:80)",
+    "name": "metrics.bytecode.lastore"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.dneg (opcode:119)",
+    "name": "metrics.bytecode.dneg"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.ldc (opcode:18)",
+    "name": "metrics.bytecode.ldc"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.pop2 (opcode:88)",
+    "name": "metrics.bytecode.pop2"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.lstore_0 (opcode:63)",
+    "name": "metrics.bytecode.lstore_0"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.dload_1 (opcode:39)",
+    "name": "metrics.bytecode.dload_1"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.dconst_1 (opcode:15)",
+    "name": "metrics.bytecode.dconst_1"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.if_icmplt (opcode:161)",
+    "name": "metrics.bytecode.if_icmplt"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.nop (opcode:0)",
+    "name": "metrics.bytecode.nop"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.goto (opcode:167)",
+    "name": "metrics.bytecode.goto"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.fadd (opcode:98)",
+    "name": "metrics.bytecode.fadd"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.ifgt (opcode:157)",
+    "name": "metrics.bytecode.ifgt"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.dcmpg (opcode:152)",
+    "name": "metrics.bytecode.dcmpg"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.lor (opcode:129)",
+    "name": "metrics.bytecode.lor"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.aload_0 (opcode:42)",
+    "name": "metrics.bytecode.aload_0"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.baload (opcode:51)",
+    "name": "metrics.bytecode.baload"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.daload (opcode:49)",
+    "name": "metrics.bytecode.daload"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.l2f (opcode:137)",
+    "name": "metrics.bytecode.l2f"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.if_acmpeq (opcode:165)",
+    "name": "metrics.bytecode.if_acmpeq"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.ifle (opcode:158)",
+    "name": "metrics.bytecode.ifle"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.iconst_1 (opcode:4)",
+    "name": "metrics.bytecode.iconst_1"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.newarray (opcode:188)",
+    "name": "metrics.bytecode.newarray"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.aaload (opcode:50)",
+    "name": "metrics.bytecode.aaload"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.getfield (opcode:180)",
+    "name": "metrics.bytecode.getfield"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.dstore (opcode:57)",
+    "name": "metrics.bytecode.dstore"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.istore_2 (opcode:61)",
+    "name": "metrics.bytecode.istore_2"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.ldiv (opcode:109)",
+    "name": "metrics.bytecode.ldiv"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.idiv (opcode:108)",
+    "name": "metrics.bytecode.idiv"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.istore_3 (opcode:62)",
+    "name": "metrics.bytecode.istore_3"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.fload (opcode:23)",
+    "name": "metrics.bytecode.fload"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.iadd (opcode:96)",
+    "name": "metrics.bytecode.iadd"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.getstatic (opcode:178)",
+    "name": "metrics.bytecode.getstatic"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.fconst_2 (opcode:13)",
+    "name": "metrics.bytecode.fconst_2"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.lmul (opcode:105)",
+    "name": "metrics.bytecode.lmul"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.f2l (opcode:140)",
+    "name": "metrics.bytecode.f2l"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.invokevirtual (opcode:182)",
+    "name": "metrics.bytecode.invokevirtual"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.dstore_1 (opcode:72)",
+    "name": "metrics.bytecode.dstore_1"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.i2l (opcode:133)",
+    "name": "metrics.bytecode.i2l"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.fload_1 (opcode:35)",
+    "name": "metrics.bytecode.fload_1"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.fload_0 (opcode:34)",
+    "name": "metrics.bytecode.fload_0"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.fsub (opcode:102)",
+    "name": "metrics.bytecode.fsub"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.dload (opcode:24)",
+    "name": "metrics.bytecode.dload"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.aload_1 (opcode:43)",
+    "name": "metrics.bytecode.aload_1"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.iflt (opcode:155)",
+    "name": "metrics.bytecode.iflt"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.putstatic (opcode:179)",
+    "name": "metrics.bytecode.putstatic"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.jsr (opcode:168)",
+    "name": "metrics.bytecode.jsr"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.d2f (opcode:144)",
+    "name": "metrics.bytecode.d2f"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.ifeq (opcode:153)",
+    "name": "metrics.bytecode.ifeq"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.imul (opcode:104)",
+    "name": "metrics.bytecode.imul"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.lload_0 (opcode:30)",
+    "name": "metrics.bytecode.lload_0"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.drem (opcode:115)",
+    "name": "metrics.bytecode.drem"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.aload_2 (opcode:44)",
+    "name": "metrics.bytecode.aload_2"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.swap (opcode:95)",
+    "name": "metrics.bytecode.swap"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.invokestatic (opcode:184)",
+    "name": "metrics.bytecode.invokestatic"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.dup2_x2 (opcode:94)",
+    "name": "metrics.bytecode.dup2_x2"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.fmul (opcode:106)",
+    "name": "metrics.bytecode.fmul"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.pop (opcode:87)",
+    "name": "metrics.bytecode.pop"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.ireturn (opcode:172)",
+    "name": "metrics.bytecode.ireturn"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.fconst_0 (opcode:11)",
+    "name": "metrics.bytecode.fconst_0"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.tableswitch (opcode:170)",
+    "name": "metrics.bytecode.tableswitch"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.iload_2 (opcode:28)",
+    "name": "metrics.bytecode.iload_2"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.lstore_3 (opcode:66)",
+    "name": "metrics.bytecode.lstore_3"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.iconst_5 (opcode:8)",
+    "name": "metrics.bytecode.iconst_5"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.fcmpl (opcode:149)",
+    "name": "metrics.bytecode.fcmpl"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.iconst_4 (opcode:7)",
+    "name": "metrics.bytecode.iconst_4"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.f2i (opcode:139)",
+    "name": "metrics.bytecode.f2i"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.if_icmpeq (opcode:159)",
+    "name": "metrics.bytecode.if_icmpeq"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.anewarray (opcode:189)",
+    "name": "metrics.bytecode.anewarray"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.laload (opcode:47)",
+    "name": "metrics.bytecode.laload"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.new (opcode:187)",
+    "name": "metrics.bytecode.new"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.dastore (opcode:82)",
+    "name": "metrics.bytecode.dastore"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.invokespecial (opcode:183)",
+    "name": "metrics.bytecode.invokespecial"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.istore_0 (opcode:59)",
+    "name": "metrics.bytecode.istore_0"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.astore_1 (opcode:76)",
+    "name": "metrics.bytecode.astore_1"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.ifnull (opcode:198)",
+    "name": "metrics.bytecode.ifnull"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.multianewarray (opcode:197)",
+    "name": "metrics.bytecode.multianewarray"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.astore_2 (opcode:77)",
+    "name": "metrics.bytecode.astore_2"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.dsub (opcode:103)",
+    "name": "metrics.bytecode.dsub"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.ixor (opcode:130)",
+    "name": "metrics.bytecode.ixor"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.ishl (opcode:120)",
+    "name": "metrics.bytecode.ishl"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.fdiv (opcode:110)",
+    "name": "metrics.bytecode.fdiv"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.ladd (opcode:97)",
+    "name": "metrics.bytecode.ladd"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.bipush (opcode:16)",
+    "name": "metrics.bytecode.bipush"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.if_icmpne (opcode:160)",
+    "name": "metrics.bytecode.if_icmpne"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.f2d (opcode:141)",
+    "name": "metrics.bytecode.f2d"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.astore_0 (opcode:75)",
+    "name": "metrics.bytecode.astore_0"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.dup_x2 (opcode:91)",
+    "name": "metrics.bytecode.dup_x2"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.lreturn (opcode:173)",
+    "name": "metrics.bytecode.lreturn"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.lstore_1 (opcode:64)",
+    "name": "metrics.bytecode.lstore_1"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.ior (opcode:128)",
+    "name": "metrics.bytecode.ior"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.sastore (opcode:86)",
+    "name": "metrics.bytecode.sastore"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.d2l (opcode:143)",
+    "name": "metrics.bytecode.d2l"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.l2i (opcode:136)",
+    "name": "metrics.bytecode.l2i"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.i2s (opcode:147)",
+    "name": "metrics.bytecode.i2s"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.dstore_2 (opcode:73)",
+    "name": "metrics.bytecode.dstore_2"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.d2i (opcode:142)",
+    "name": "metrics.bytecode.d2i"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.dup_x1 (opcode:90)",
+    "name": "metrics.bytecode.dup_x1"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.l2d (opcode:138)",
+    "name": "metrics.bytecode.l2d"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.iconst_2 (opcode:5)",
+    "name": "metrics.bytecode.iconst_2"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.i2f (opcode:134)",
+    "name": "metrics.bytecode.i2f"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.putfield (opcode:181)",
+    "name": "metrics.bytecode.putfield"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.dup2_x1 (opcode:93)",
+    "name": "metrics.bytecode.dup2_x1"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.saload (opcode:53)",
+    "name": "metrics.bytecode.saload"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.fstore_0 (opcode:67)",
+    "name": "metrics.bytecode.fstore_0"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.instanceof (opcode:193)",
+    "name": "metrics.bytecode.instanceof"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.fstore_3 (opcode:70)",
+    "name": "metrics.bytecode.fstore_3"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.iload_0 (opcode:26)",
+    "name": "metrics.bytecode.iload_0"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.arraylength (opcode:190)",
+    "name": "metrics.bytecode.arraylength"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.aload_3 (opcode:45)",
+    "name": "metrics.bytecode.aload_3"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.lshr (opcode:123)",
+    "name": "metrics.bytecode.lshr"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.dmul (opcode:107)",
+    "name": "metrics.bytecode.dmul"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.faload (opcode:48)",
+    "name": "metrics.bytecode.faload"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.astore (opcode:58)",
+    "name": "metrics.bytecode.astore"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.areturn (opcode:176)",
+    "name": "metrics.bytecode.areturn"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.lrem (opcode:113)",
+    "name": "metrics.bytecode.lrem"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.dup (opcode:89)",
+    "name": "metrics.bytecode.dup"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.iconst_3 (opcode:6)",
+    "name": "metrics.bytecode.iconst_3"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.checkcast (opcode:192)",
+    "name": "metrics.bytecode.checkcast"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.lstore (opcode:55)",
+    "name": "metrics.bytecode.lstore"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.fload_3 (opcode:37)",
+    "name": "metrics.bytecode.fload_3"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.fstore_2 (opcode:69)",
+    "name": "metrics.bytecode.fstore_2"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.dload_3 (opcode:41)",
+    "name": "metrics.bytecode.dload_3"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.i2c (opcode:146)",
+    "name": "metrics.bytecode.i2c"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.ifnonnull (opcode:199)",
+    "name": "metrics.bytecode.ifnonnull"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.dreturn (opcode:175)",
+    "name": "metrics.bytecode.dreturn"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.astore_3 (opcode:78)",
+    "name": "metrics.bytecode.astore_3"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.wide (opcode:196)",
+    "name": "metrics.bytecode.wide"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.ret (opcode:169)",
+    "name": "metrics.bytecode.ret"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.jsr_w (opcode:201)",
+    "name": "metrics.bytecode.jsr_w"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.fconst_1 (opcode:12)",
+    "name": "metrics.bytecode.fconst_1"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.iload_3 (opcode:29)",
+    "name": "metrics.bytecode.iload_3"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.iconst_m1 (opcode:2)",
+    "name": "metrics.bytecode.iconst_m1"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.if_icmple (opcode:164)",
+    "name": "metrics.bytecode.if_icmple"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.iload_1 (opcode:27)",
+    "name": "metrics.bytecode.iload_1"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.if_icmpge (opcode:162)",
+    "name": "metrics.bytecode.if_icmpge"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.isub (opcode:100)",
+    "name": "metrics.bytecode.isub"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.ddiv (opcode:111)",
+    "name": "metrics.bytecode.ddiv"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.monitorenter (opcode:194)",
+    "name": "metrics.bytecode.monitorenter"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.fstore_1 (opcode:68)",
+    "name": "metrics.bytecode.fstore_1"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.freturn (opcode:174)",
+    "name": "metrics.bytecode.freturn"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.iinc (opcode:132)",
+    "name": "metrics.bytecode.iinc"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.i2d (opcode:135)",
+    "name": "metrics.bytecode.i2d"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.iushr (opcode:124)",
+    "name": "metrics.bytecode.iushr"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.if_icmpgt (opcode:163)",
+    "name": "metrics.bytecode.if_icmpgt"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.iand (opcode:126)",
+    "name": "metrics.bytecode.iand"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.dload_2 (opcode:40)",
+    "name": "metrics.bytecode.dload_2"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.istore_1 (opcode:60)",
+    "name": "metrics.bytecode.istore_1"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.monitorexit (opcode:195)",
+    "name": "metrics.bytecode.monitorexit"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.fneg (opcode:118)",
+    "name": "metrics.bytecode.fneg"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.istore (opcode:54)",
+    "name": "metrics.bytecode.istore"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.lcmp (opcode:148)",
+    "name": "metrics.bytecode.lcmp"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.fcmpg (opcode:150)",
+    "name": "metrics.bytecode.fcmpg"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.caload (opcode:52)",
+    "name": "metrics.bytecode.caload"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.aload (opcode:25)",
+    "name": "metrics.bytecode.aload"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.fload_2 (opcode:36)",
+    "name": "metrics.bytecode.fload_2"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.lxor (opcode:131)",
+    "name": "metrics.bytecode.lxor"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.ldc_w (opcode:19)",
+    "name": "metrics.bytecode.ldc_w"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.lload_2 (opcode:32)",
+    "name": "metrics.bytecode.lload_2"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.lsub (opcode:101)",
+    "name": "metrics.bytecode.lsub"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.iaload (opcode:46)",
+    "name": "metrics.bytecode.iaload"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.lload_3 (opcode:33)",
+    "name": "metrics.bytecode.lload_3"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.fstore (opcode:56)",
+    "name": "metrics.bytecode.fstore"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.iastore (opcode:79)",
+    "name": "metrics.bytecode.iastore"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.fastore (opcode:81)",
+    "name": "metrics.bytecode.fastore"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.dconst_0 (opcode:14)",
+    "name": "metrics.bytecode.dconst_0"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.ifne (opcode:154)",
+    "name": "metrics.bytecode.ifne"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.lconst_0 (opcode:9)",
+    "name": "metrics.bytecode.lconst_0"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.i2b (opcode:145)",
+    "name": "metrics.bytecode.i2b"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.ishr (opcode:122)",
+    "name": "metrics.bytecode.ishr"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.lneg (opcode:117)",
+    "name": "metrics.bytecode.lneg"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.lconst_1 (opcode:10)",
+    "name": "metrics.bytecode.lconst_1"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.athrow (opcode:191)",
+    "name": "metrics.bytecode.athrow"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.bastore (opcode:84)",
+    "name": "metrics.bytecode.bastore"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.goto_w (opcode:200)",
+    "name": "metrics.bytecode.goto_w"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.dstore_3 (opcode:74)",
+    "name": "metrics.bytecode.dstore_3"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.dadd (opcode:99)",
+    "name": "metrics.bytecode.dadd"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.if_acmpne (opcode:166)",
+    "name": "metrics.bytecode.if_acmpne"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.iload (opcode:21)",
+    "name": "metrics.bytecode.iload"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.ifge (opcode:156)",
+    "name": "metrics.bytecode.ifge"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.return (opcode:177)",
+    "name": "metrics.bytecode.return"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.sipush (opcode:17)",
+    "name": "metrics.bytecode.sipush"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.frem (opcode:114)",
+    "name": "metrics.bytecode.frem"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.lookupswitch (opcode:171)",
+    "name": "metrics.bytecode.lookupswitch"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.lload (opcode:22)",
+    "name": "metrics.bytecode.lload"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.ldc2_w (opcode:20)",
+    "name": "metrics.bytecode.ldc2_w"
+  }
+]
