@@ -2,24 +2,24 @@ name := "delphi-webapi"
 
 version := "1.0.0-SNAPSHOT"
 
-scalaVersion := "2.12.4"
+scalaVersion := "2.13.1"
 
-val akkaVersion = "2.5.16"
+val akkaVersion = "2.6.1"
 libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-stream" % akkaVersion,
   "com.typesafe.akka" %% "akka-slf4j" % akkaVersion
 )
 
-val akkaHttpVersion = "10.1.5"
+val akkaHttpVersion = "10.1.10"
 libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-http" % akkaHttpVersion,
   "com.typesafe.akka" %% "akka-http-testkit" % akkaHttpVersion,
   "com.typesafe.akka" %% "akka-http-spray-json" % akkaHttpVersion
 )
 //Including http client for elastic4s
-libraryDependencies += "org.apache.httpcomponents" % "httpclient" % "4.5.3"
+libraryDependencies += "org.apache.httpcomponents" % "httpclient" % "4.5.9"
 
-val elastic4sVersion = "6.3.8"
+val elastic4sVersion = "6.7.4"
 libraryDependencies ++= Seq(
   "com.sksamuel.elastic4s" %% "elastic4s-core" % elastic4sVersion,
   //Excluding default 4.5.2 due to https://snyk.io/vuln/SNYK-JAVA-ORGAPACHEHTTPCOMPONENTS-31517
@@ -28,12 +28,12 @@ libraryDependencies ++= Seq(
 )
 
 
-libraryDependencies += "com.pauldijou" %% "jwt-core" % "1.0.0"
+libraryDependencies += "com.pauldijou" %% "jwt-core" % "4.2.0"
 
-libraryDependencies += "org.parboiled" %% "parboiled" % "2.1.4"
+libraryDependencies += "org.parboiled" %% "parboiled" % "2.1.8"
 libraryDependencies += "io.spray" %% "spray-json" % "1.3.5"
-libraryDependencies += "org.scalactic" %% "scalactic" % "3.0.4"
-libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.4" % "it,test"
+libraryDependencies += "org.scalactic" %% "scalactic" % "3.1.0"
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.1.0" % "it,test"
 libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.2.3" % Runtime
 
 lazy val webapi = (project in file(".")).
@@ -60,7 +60,7 @@ scalastyleConfig := baseDirectory.value / "project" / "scalastyle-config.xml"
 // Pinning secure versions of insecure transitive libraryDependencies
 // Please update when updating dependencies above (including Play plugin)
 libraryDependencies ++= Seq(
-  "com.fasterxml.jackson.core" % "jackson-databind" % "2.9.10.1"
+  "com.fasterxml.jackson.core" % "jackson-databind" % "2.10.1"
 )
 
 trapExit := false
