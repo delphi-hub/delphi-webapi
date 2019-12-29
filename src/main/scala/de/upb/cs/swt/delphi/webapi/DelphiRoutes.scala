@@ -27,6 +27,7 @@ import de.upb.cs.swt.delphi.webapi.IpLogActor._
 import de.upb.cs.swt.delphi.webapi.StatisticsJson._
 import de.upb.cs.swt.delphi.webapi.artifacts.ArtifactJson._
 import de.upb.cs.swt.delphi.webapi.search.QueryRequestJson._
+import de.upb.cs.swt.delphi.webapi.FeatureJson._
 import de.upb.cs.swt.delphi.webapi.search.{QueryRequest, SearchError, SearchQuery}
 import spray.json._
 
@@ -71,7 +72,7 @@ class DelphiRoutes(requestLimiter: RequestLimitScheduler) extends JsonSupport wi
 
   private def features = {
     get {
-      parameter('pretty.?) { (pretty) =>
+      parameter(Symbol("pretty").?) { (pretty) =>
         complete(
           //TODO: Introduce failure concept for feature extractor
           prettyPrint(pretty, featureExtractor.featureList.toJson)
@@ -83,7 +84,7 @@ class DelphiRoutes(requestLimiter: RequestLimitScheduler) extends JsonSupport wi
 
   private def statistics = {
     get {
-      parameter('pretty.?) { (pretty) =>
+      parameter(Symbol("pretty").?) { (pretty) =>
         complete {
           val result = new StatisticsQuery(configuration).retrieveStandardStatistics
           result match {
@@ -99,7 +100,7 @@ class DelphiRoutes(requestLimiter: RequestLimitScheduler) extends JsonSupport wi
 
   private def retrieve(identifier: String): Route = {
     get {
-      parameter('pretty.?) { (pretty) =>
+      parameter(Symbol("pretty").?) { (pretty) =>
         complete(
           RetrieveQuery.retrieve(identifier) match {
             case Some(result) => prettyPrint(pretty, result.toJson)
@@ -112,7 +113,7 @@ class DelphiRoutes(requestLimiter: RequestLimitScheduler) extends JsonSupport wi
 
   def search: Route = {
     post {
-      parameter('pretty.?) { (pretty) =>
+      parameter(Symbol("pretty").?) { (pretty) =>
         entity(as[QueryRequest]) { input =>
           log.info(s"Received search query: ${input.query}")
           complete(
