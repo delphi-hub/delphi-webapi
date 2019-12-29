@@ -81,7 +81,7 @@ class Configuration( //Server and Elasticsearch configuration
       if (hostString.count(c => c == ':') == 2) {
         hostString.substring(0, hostString.lastIndexOf(":"))
       } else {
-        defaultElasticSearchHost
+        hostString
       }
     case None => defaultElasticSearchHost
 
