@@ -19,7 +19,8 @@ package de.upb.cs.swt.delphi.webapi
 import com.sksamuel.elastic4s.http.ElasticDsl._
 import com.sksamuel.elastic4s.http.get.GetResponse
 import com.sksamuel.elastic4s.http.{ElasticClient, RequestSuccess, Response}
-import de.upb.cs.swt.delphi.webapi.artifacts.{Artifact, ArtifactTransformer}
+import de.upb.cs.swt.delphi.core.model._
+import de.upb.cs.swt.delphi.webapi.artifacts.ArtifactTransformer
 
 object RetrieveQuery {
 

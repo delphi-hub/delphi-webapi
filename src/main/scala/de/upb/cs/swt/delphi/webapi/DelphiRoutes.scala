@@ -23,11 +23,11 @@ import akka.http.scaladsl.server.Directives._
 import akka.http.scaladsl.server.Route
 import akka.pattern.ask
 import akka.stream.scaladsl.Source
+import de.upb.cs.swt.delphi.core.model.ArtifactJson._
+import de.upb.cs.swt.delphi.webapi.FeatureJson._
 import de.upb.cs.swt.delphi.webapi.IpLogActor._
 import de.upb.cs.swt.delphi.webapi.StatisticsJson._
-import de.upb.cs.swt.delphi.webapi.artifacts.ArtifactJson._
 import de.upb.cs.swt.delphi.webapi.search.QueryRequestJson._
-import de.upb.cs.swt.delphi.webapi.FeatureJson._
 import de.upb.cs.swt.delphi.webapi.search.{QueryRequest, SearchError, SearchQuery}
 import spray.json._
 

@@ -17,12 +17,12 @@
 package de.upb.cs.swt.delphi.webapi.artifacts
 
 import com.sksamuel.elastic4s.http.search.{SearchHit, SearchHits}
+import de.upb.cs.swt.delphi.core.model._
 import de.upb.cs.swt.delphi.webapi.InternalFeature
 import org.joda.time.format.ISODateTimeFormat
 import spray.json.JsArray
 
 import scala.io.Source
-
 import spray.json._
 import de.upb.cs.swt.delphi.webapi.FeatureJson._
 
