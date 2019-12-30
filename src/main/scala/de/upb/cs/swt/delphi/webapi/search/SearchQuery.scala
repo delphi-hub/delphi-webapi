@@ -20,14 +20,14 @@ import com.sksamuel.elastic4s.http.ElasticDsl._
 import com.sksamuel.elastic4s.http.search.SearchHits
 import com.sksamuel.elastic4s.http.{ElasticClient, RequestFailure, RequestSuccess}
 import com.sksamuel.elastic4s.searches.queries.{NoopQuery, Query}
-import de.upb.cs.swt.delphi.webapi.artifacts.{Artifact, ArtifactTransformer}
-import de.upb.cs.swt.delphi.webapi.search.querylanguage._
+import de.upb.cs.swt.delphi.core.model._
+import de.upb.cs.swt.delphi.core.ql._
+import de.upb.cs.swt.delphi.webapi.artifacts.ArtifactTransformer
 import de.upb.cs.swt.delphi.webapi.{Configuration, Feature, FeatureQuery, InternalFeature}
 import spray.json.JsArray
 
 import scala.io.Source
 import scala.util.{Failure, Success, Try}
-
 import spray.json._
 import de.upb.cs.swt.delphi.webapi.FeatureJson._
 
