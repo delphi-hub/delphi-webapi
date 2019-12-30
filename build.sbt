@@ -27,7 +27,7 @@ libraryDependencies ++= Seq(
   "com.sksamuel.elastic4s" %% "elastic4s-http-streams" % elastic4sVersion,
 )
 
-libraryDependencies += "de.upb.cs.swt.delphi" %% "delphi-core" % "0.9.0"
+libraryDependencies += "de.upb.cs.swt.delphi" %% "delphi-core" % "0.9.1"
 
 libraryDependencies += "com.pauldijou" %% "jwt-core" % "4.2.0"
 
