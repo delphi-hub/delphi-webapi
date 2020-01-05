@@ -21,8 +21,223 @@
   },
   {
     "description": "",
+    "internalName": "hermes.features.linear methods (McCabe)",
+    "name": "metrics.mccabe.linear"
+  },
+  {
+    "description": "",
     "internalName": "hermes.features.2-3 McCabe",
-    "name": "2-3 McCabe"
+    "name": "metrics.mccabe.2-3"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.4-10 McCabe",
+    "name": "metrics.mccabe.4-10"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.>10 McCabe",
+    "name": "metrics.mccabe.>10"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.FanIn - Category 1",
+    "name": "metrics.fanin.cat1"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.FanIn - Category 2",
+    "name": "metrics.fanin.cat2"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.FanIn - Category 3",
+    "name": "metrics.fanin.cat3"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.FanIn - Category 4",
+    "name": "metrics.fanin.cat4"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.FanIn - Category 5",
+    "name": "metrics.fanin.cat5"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.FanIn - Category 6",
+    "name": "metrics.fanin.cat6"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.FanIn/FanOut - Category 1",
+    "name": "metrics.faninfanout.cat1"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.FanIn/FanOut - Category 2",
+    "name": "metrics.faninfanout.cat2"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.FanIn/FanOut - Category 3",
+    "name": "metrics.faninfanout.cat3"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.FanIn/FanOut - Category 4",
+    "name": "metrics.faninfanout.cat4"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.FanIn/FanOut - Category 5",
+    "name": "metrics.faninfanout.cat5"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.FanIn/FanOut - Category 6",
+    "name": "metrics.faninfanout.cat6"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.FanOut - Category 1",
+    "name": "metrics.fanout.cat1"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.FanOut - Category 2",
+    "name": "metrics.fanout.cat2"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.FanOut - Category 3",
+    "name": "metrics.fanout.cat3"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.FanOut - Category 4",
+    "name": "metrics.fanout.cat4"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.FanOut - Category 5",
+    "name": "metrics.fanout.cat5"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.FanOut - Category 6",
+    "name": "metrics.fanout.cat6"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.0 FPC",
+    "name": "metrics.fpc.0"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.1-3 FPC",
+    "name": "metrics.fpc.1-3"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.4-10 FPC",
+    "name": "metrics.fpc.4-10"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.>10 FPC",
+    "name": "metrics.fpc.>10"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.1-3 CPP",
+    "name": "metrics.cpp.1-3"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.4-10 CPP",
+    "name": "metrics.cpp.4-10"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.>10 CPP",
+    "name": "metrics.cpp.>10"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.0 NOC",
+    "name": "metrics.noc.0"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.1-3 NOC",
+    "name": "metrics.noc.1-3"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.4-10 NOC",
+    "name": "metrics.noc.4-10"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.>10 NOC",
+    "name": "metrics.noc.>10"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.0 MPC",
+    "name": "metrics.mpc.0"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.1-3 MPC",
+    "name": "metrics.mpc.1-3"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.4-10 MPC",
+    "name": "metrics.mpc.4-10"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.>10 MPC",
+    "name": "metrics.mpc.>10"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Very Small Inheritance Tree",
+    "name": "metrics.inheritancetree.verysmall"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Very Large Inheritance Tree",
+    "name": "metrics.inheritancetree.verylarge"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Medium Inheritance Tree",
+    "name": "metrics.inheritancetree.medium"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Huge Inheritance Tree",
+    "name": "metrics.inheritancetree.huge"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Large Inheritance Tree",
+    "name": "metrics.inheritancetree.large"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Size of the Inheritance Tree Unknown",
+    "name": "metrics.inheritancetree.unknown"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Small Inheritance Tree",
+    "name": "metrics.inheritancetree.small"
   },
   {
     "description": "",
@@ -41,13 +256,38 @@
   },
   {
     "description": "",
-    "internalName": "hermes.features.custom ClassLoader implementation",
-    "name": "custom ClassLoader implementation"
+    "internalName": "hermes.features.Class File\nJava 7",
+    "name": "metrics.classversion.7"
   },
   {
     "description": "",
-    "internalName": "hermes.features.FanIn - Category 1",
-    "name": "FanIn - Category 1"
+    "internalName": "hermes.features.Class File\nJava 6",
+    "name": "metrics.classversion.6"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Class File\nJava 8",
+    "name": "metrics.classversion.8"
+  },
+  {
+    "description": "",
+    "internalName": "Class File JDK 1.1 (JDK 1.0.2)",
+    "name": "metrics.classversion.1.1"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Class File\nJava 9",
+    "name": "metrics.classversion.9"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Class File\nJDK 1",
+    "name": "metrics.classversion.1"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.custom ClassLoader implementation",
+    "name": "custom ClassLoader implementation"
   },
   {
     "description": "",
@@ -56,13 +296,8 @@
   },
   {
     "description": "",
-    "internalName": "hermes.features.1-3 FPC",
-    "name": "1-3 FPC"
-  },
-  {
-    "description": "",
     "internalName": "hermes.features.module (Java >9)",
-    "name": "module (Java >9)"
+    "name": "metrics.java9.modules"
   },
   {
     "description": "",
@@ -91,8 +326,8 @@
   },
   {
     "description": "",
-    "internalName": "hermes.features.non-functional interface\nwith default methods (Java >8)",
-    "name": "non-functional interface\nwith default methods (Java >8)"
+    "internalName": "hermes.features.Unsafe - Ordered Put",
+    "name": "metrics.api.unsafe.orderedput"
   },
   {
     "description": "",
@@ -103,6 +338,76 @@
     "description": "",
     "internalName": "hermes.features.Unsafe - Offset",
     "name": "metrics.api.unsafe.offset"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Unsafe - compareAndSwap",
+    "name": "metrics.api.unsafe.compareAndSwap"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Unsafe - Off-Heap",
+    "name": "metrics.api.unsafe.offheap"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Unsafe - Heap Get",
+    "name": "metrics.api.unsafe.heapget"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Unsafe - Fence",
+    "name": "metrics.api.unsafe.fence"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Unsafe - Fetch & Add",
+    "name": "metrics.api.unsafe.fetchAndAdd"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Unsafe - Alloc",
+    "name": "metrics.api.unsafe.alloc"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Unsafe - Throw",
+    "name": "metrics.api.unsafe.throw"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Unsafe - Heap Put",
+    "name": "metrics.api.unsafe.heapput"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Unsafe - Volatile Put",
+    "name": "metrics.api.unsafe.volatileput"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Unsafe - Class",
+    "name": "metrics.api.unsafe.class"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Unsafe - Monitor",
+    "name": "metrics.api.unsafe.monitor"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Unsafe - Park",
+    "name": "metrics.api.unsafe.park"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.Unsafe - Volatile Get",
+    "name": "metrics.api.unsafe.volatileget"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.non-functional interface\nwith default methods (Java >8)",
+    "name": "non-functional interface\nwith default methods (Java >8)"
   },
   {
     "description": "",
@@ -121,33 +426,43 @@
   },
   {
     "description": "",
-    "internalName": "hermes.features.FanIn/FanOut - Category 6",
-    "name": "FanIn/FanOut - Category 6"
-  },
-  {
-    "description": "",
     "internalName": "hermes.features.unused package visible fields",
     "name": "metrics.unusedfield.packagevisible"
   },
   {
     "description": "",
     "internalName": "hermes.features.cryptographic key handling",
-    "name": "metrics.api.cryptographic key handling"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.FanIn - Category 2",
-    "name": "FanIn - Category 2"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.>10 McCabe",
-    "name": ">10 McCabe"
+    "name": "metrics.api.crypto.KeyHandling"
   },
   {
     "description": "",
     "internalName": "hermes.features.using KeyStore",
-    "name": "using KeyStore"
+    "name": "metrics.api.crypto.KeyStore"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.using SecureRandom",
+    "name": "metrics.api.crypto.SecureRandom"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.using MessageDigest",
+    "name": "metrics.api.crypto.MessageDigest"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.using Mac",
+    "name": "metrics.api.crypto.Mac"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.using Signature",
+    "name": "metrics.api.crypto.Signature"
+  },
+  {
+    "description": "",
+    "internalName": "hermes.features.using Certificates",
+    "name": "metrics.api.crypto.Certificates"
   },
   {
     "description": "",
@@ -156,38 +471,8 @@
   },
   {
     "description": "",
-    "internalName": "hermes.features.Very Small Inheritance Tree",
-    "name": "Very Small Inheritance Tree"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.FanOut - Category 2",
-    "name": "FanOut - Category 2"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.>10 CPP",
-    "name": ">10 CPP"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.Very Large Inheritance Tree",
-    "name": "Very Large Inheritance Tree"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.4-10 McCabe",
-    "name": "4-10 McCabe"
-  },
-  {
-    "description": "",
     "internalName": "hermes.features.Pseudo Class",
     "name": "Pseudo Class"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.4-10 FPC",
-    "name": "4-10 FPC"
   },
   {
     "description": "",
@@ -211,33 +496,8 @@
   },
   {
     "description": "",
-    "internalName": "hermes.features.>10 NOC",
-    "name": ">10 NOC"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.FanOut - Category 4",
-    "name": "FanOut - Category 4"
-  },
-  {
-    "description": "",
     "internalName": "hermes.features.State Machine",
     "name": "State Machine"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.4-10 NOC",
-    "name": "4-10 NOC"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.1-3 CPP",
-    "name": "1-3 CPP"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.Unsafe - Ordered Put",
-    "name": "metrics.api.unsafe.orderedput"
   },
   {
     "description": "",
@@ -266,28 +526,13 @@
   },
   {
     "description": "",
-    "internalName": "hermes.features.Medium Inheritance Tree",
-    "name": "Medium Inheritance Tree"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.0 NOC",
-    "name": "0 NOC"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.Huge Inheritance Tree",
-    "name": "Huge Inheritance Tree"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.1-3 MPC",
-    "name": "1-3 MPC"
+    "internalName": "hermes.features.Usage of Thread API",
+    "name": "metrics.api.thread"
   },
   {
     "description": "",
     "internalName": "hermes.features.Usage of ThreadGroup API",
-    "name": "Usage of ThreadGroup API"
+    "name": "metrics.api.threadgroup"
   },
   {
     "description": "",
@@ -301,18 +546,8 @@
   },
   {
     "description": "",
-    "internalName": "hermes.features.4-10 MPC",
-    "name": "4-10 MPC"
-  },
-  {
-    "description": "",
     "internalName": "hermes.features.Misc",
     "name": "Misc"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.FanIn/FanOut - Category 3",
-    "name": "FanIn/FanOut - Category 3"
   },
   {
     "description": "",
@@ -331,33 +566,8 @@
   },
   {
     "description": "",
-    "internalName": "hermes.features.Unsafe - compareAndSwap",
-    "name": "metrics.api.unsafe.compareAndSwap"
-  },
-  {
-    "description": "",
     "internalName": "hermes.features.Stateless",
     "name": "Stateless"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.FanIn - Category 6",
-    "name": "FanIn - Category 6"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.Class File\nJava 7",
-    "name": "metrics.classversion.7"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.Class File\nJava 6",
-    "name": "metrics.classversion.6"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.Unsafe - Off-Heap",
-    "name": "metrics.api.unsafe.offheap"
   },
   {
     "description": "",
@@ -371,23 +581,8 @@
   },
   {
     "description": "",
-    "internalName": "hermes.features.Unsafe - Heap Get",
-    "name": "metrics.api.unsafe.heapget"
-  },
-  {
-    "description": "",
     "internalName": "hermes.features.retrieve classes information",
     "name": "retrieve classes information"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.using SecureRandom",
-    "name": "using SecureRandom"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.FanOut - Category 5",
-    "name": "FanOut - Category 5"
   },
   {
     "description": "",
@@ -396,28 +591,8 @@
   },
   {
     "description": "",
-    "internalName": "hermes.features.using MessageDigest",
-    "name": "using MessageDigest"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.FanOut - Category 1",
-    "name": "FanOut - Category 1"
-  },
-  {
-    "description": "",
     "internalName": "hermes.features.Class File With\nSource Attribute",
     "name": "Class File With\nSource Attribute"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.Large Inheritance Tree",
-    "name": "Large Inheritance Tree"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.Size of the Inheritance Tree Unknown",
-    "name": "Size of the Inheritance Tree Unknown"
   },
   {
     "description": "",
@@ -451,11 +626,6 @@
   },
   {
     "description": "",
-    "internalName": "hermes.features.FanIn/FanOut - Category 1",
-    "name": "FanIn/FanOut - Category 1"
-  },
-  {
-    "description": "",
     "internalName": "hermes.features.sun",
     "name": "sun"
   },
@@ -463,16 +633,6 @@
     "description": "",
     "internalName": "hermes.features.Object-based Thread Notification",
     "name": "Object-based Thread Notification"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.linear methods (McCabe)",
-    "name": "linear methods (McCabe)"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.FanIn/FanOut - Category 4",
-    "name": "FanIn/FanOut - Category 4"
   },
   {
     "description": "",
@@ -491,23 +651,8 @@
   },
   {
     "description": "",
-    "internalName": "hermes.features.FanIn/FanOut - Category 2",
-    "name": "FanIn/FanOut - Category 2"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.Unsafe - Fence",
-    "name": "metrics.api.unsafe.fence"
-  },
-  {
-    "description": "",
     "internalName": "hermes.features.Record",
     "name": "Record"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.using Mac",
-    "name": "using Mac"
   },
   {
     "description": "",
@@ -521,23 +666,8 @@
   },
   {
     "description": "",
-    "internalName": "hermes.features.FanOut - Category 6",
-    "name": "FanOut - Category 6"
-  },
-  {
-    "description": "",
     "internalName": "hermes.features.Sink",
     "name": "Sink"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.Unsafe - Fetch & Add",
-    "name": "metrics.api.unsafe.fetchAndAdd"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.FanIn - Category 3",
-    "name": "FanIn - Category 3"
   },
   {
     "description": "",
@@ -571,28 +701,13 @@
   },
   {
     "description": "",
-    "internalName": "hermes.features.4-10 CPP",
-    "name": "4-10 CPP"
-  },
-  {
-    "description": "",
     "internalName": "hermes.features.annotations",
     "name": "annotations"
   },
   {
     "description": "",
-    "internalName": "hermes.features.Unsafe - Alloc",
-    "name": "metrics.api.unsafe.alloc"
-  },
-  {
-    "description": "",
     "internalName": "hermes.features.Trait",
     "name": "Trait"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.Unsafe - Throw",
-    "name": "metrics.api.unsafe.throw"
   },
   {
     "description": "",
@@ -608,11 +723,6 @@
     "description": "",
     "internalName": "hermes.features.Compound Box",
     "name": "Compound Box"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.Unsafe - Heap Put",
-    "name": "metrics.api.unsafe.heapput"
   },
   {
     "description": "",
@@ -656,11 +766,6 @@
   },
   {
     "description": "",
-    "internalName": "hermes.features.using Signature",
-    "name": "using Signature"
-  },
-  {
-    "description": "",
     "internalName": "hermes.features.Method With\nLocal Variable Type Table",
     "name": "Method With\nLocal Variable Type Table"
   },
@@ -696,21 +801,6 @@
   },
   {
     "description": "",
-    "internalName": "hermes.features.Class File\nJava 8",
-    "name": "metrics.classversion.8"
-  },
-  {
-    "description": "",
-    "internalName": "Class File JDK 1.1 (JDK 1.0.2)",
-    "name": "metrics.classversion.1.1"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.FanIn/FanOut - Category 5",
-    "name": "FanIn/FanOut - Category 5"
-  },
-  {
-    "description": "",
     "internalName": "hermes.features.protected fields\nonly used by defining type",
     "name": "protected fields\nonly used by defining type"
   },
@@ -731,21 +821,6 @@
   },
   {
     "description": "",
-    "internalName": "hermes.features.Unsafe - Volatile Put",
-    "name": "metrics.api.unsafe.volatileput"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.using Certificates",
-    "name": "using Certificates"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.Unsafe - Class",
-    "name": "metrics.api.unsafe.class"
-  },
-  {
-    "description": "",
     "internalName": "hermes.features.static methods\n(not including static initializers)",
     "name": "static methods\n(not including static initializers)"
   },
@@ -756,28 +831,8 @@
   },
   {
     "description": "",
-    "internalName": "hermes.features.Unsafe - Monitor",
-    "name": "metrics.api.unsafe.monitor"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.FanIn - Category 4",
-    "name": "FanIn - Category 4"
-  },
-  {
-    "description": "",
     "internalName": "hermes.features.Extender",
     "name": "Extender"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.>10 MPC",
-    "name": ">10 MPC"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.0 FPC",
-    "name": "0 FPC"
   },
   {
     "description": "",
@@ -791,16 +846,6 @@
   },
   {
     "description": "",
-    "internalName": "hermes.features.FanIn - Category 5",
-    "name": "FanIn - Category 5"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.FanOut - Category 3",
-    "name": "FanOut - Category 3"
-  },
-  {
-    "description": "",
     "internalName": "hermes.features.Outline",
     "name": "Outline"
   },
@@ -811,28 +856,8 @@
   },
   {
     "description": "",
-    "internalName": "hermes.features.1-3 NOC",
-    "name": "1-3 NOC"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.Class File\nJava 9",
-    "name": "metrics.classversion.9"
-  },
-  {
-    "description": "",
     "internalName": "hermes.features.Swing",
     "name": "Swing"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.0 MPC",
-    "name": "0 MPC"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.Class File\nJDK 1",
-    "name": "metrics.classversion.1"
   },
   {
     "description": "",
@@ -843,11 +868,6 @@
     "description": "",
     "internalName": "hermes.features.define new classes/packages",
     "name": "define new classes/packages"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.Small Inheritance Tree",
-    "name": "Small Inheritance Tree"
   },
   {
     "description": "",
