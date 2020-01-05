@@ -45,8 +45,8 @@ class SearchQuery(configuration: Configuration, featureExtractor: FeatureQuery) 
 
   lazy val externalToInternalFeature = internalFeatures.map(i => i.name -> i.internalName).toMap
 
-  private def checkAndExecuteParsedQuery(ast: CombinatorialExpr, limit: Int): Try[SearchHits] = {
-    val fields = collectFieldNames(ast)
+  private def checkAndExecuteParsedQuery(parsedQuery: de.upb.cs.swt.delphi.core.ql.Query, limit: Int): Try[SearchHits] = {
+    val fields = collectFieldNames(parsedQuery.expr)
 
     val publicFieldNames = internalFeatures.map(i => i.name)
     val invalidFields = fields.toSet.filter(f => !publicFieldNames.contains(f))
@@ -54,10 +54,23 @@ class SearchQuery(configuration: Configuration, featureExtractor: FeatureQuery) 
     if (invalidFields.size > 0) return Failure(new IllegalArgumentException(s"Unknown field name(s) used. (${invalidFields.mkString(",")})"))
 
     val translatedFields = fields.toSet.map(externalToInternalFeature(_))
+    def getPrefix (in: String) : String = {
+      if (in.contains("*")) {
+        in.substring(0, in.indexOf("*"))
+      }
+      else {
+        in
+      }
+    }
+    val selectedFields = parsedQuery
+      .selections
+      .flatMap(f => internalFeatures.filter(i => i.name.startsWith(getPrefix(f.fieldName))))
+      .map(i => i.internalName)
+
 
     val query = searchWithType(configuration.esProjectIndex)
-      .query(translate(ast))
-      .sourceInclude(ArtifactTransformer.baseFields ++ translatedFields)
+      .query(translate(parsedQuery.expr))
+      .sourceInclude(ArtifactTransformer.baseFields ++ translatedFields ++ selectedFields)
       .limit(limit)
 
     val response = client.execute {
@@ -154,8 +167,8 @@ class SearchQuery(configuration: Configuration, featureExtractor: FeatureQuery) 
       val parserResult = new Syntax(query.query).QueryRule.run()
       parserResult match {
         case Failure(e) => Failure(e)
-        case Success(ast) => {
-          checkAndExecuteParsedQuery(ast, query.limit.getOrElse(defaultFetchSize)) match {
+        case Success(parsedQuery) => {
+          checkAndExecuteParsedQuery(parsedQuery, query.limit.getOrElse(defaultFetchSize)) match {
             case Failure(e) => Failure(e)
             case Success(hits) => Success(ArtifactTransformer.transformResults(hits))
           }
