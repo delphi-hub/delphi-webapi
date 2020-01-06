@@ -17,9 +17,28 @@
 package de.upb.cs.swt.delphi.webapi.artifacts
 
 import com.sksamuel.elastic4s.http.search.{SearchHit, SearchHits}
+import de.upb.cs.swt.delphi.core.model._
+import de.upb.cs.swt.delphi.webapi.InternalFeature
 import org.joda.time.format.ISODateTimeFormat
+import spray.json.JsArray
+
+import scala.io.Source
+import spray.json._
+import de.upb.cs.swt.delphi.webapi.FeatureJson._
+import de.upb.cs.swt.delphi.webapi.search.SearchResults
 
 object ArtifactTransformer {
+  private lazy val internalFeatures = Source.fromResource("features.json")
+    .getLines()
+    .mkString("\n")
+    .parseJson
+    .asInstanceOf[JsArray]
+    .elements
+    .map(r => r.convertTo[InternalFeature])
+
+  lazy val internalToExternalFeature = internalFeatures.map(i => i.internalName -> i.name).toMap
+
+
 
   private def getHermesResults(sourceMap: Map[String, AnyRef]): Map[String, Int] = {
     if (!sourceMap.contains("hermes")) return Map()
@@ -28,7 +47,7 @@ object ArtifactTransformer {
 
     val hermesMap = sourceMap("hermes").asInstanceOf[Map[String, AnyRef]]
 
-    hermesMap("features").asInstanceOf[Map[String, Int]]
+    hermesMap("features").asInstanceOf[Map[String, Int]].map(f => (internalToExternalFeature.getOrElse("hermes.features." + f._1, f._1), f._2))
   }
 
   private def getMetadata(sourceMap: Map[String, AnyRef]): ArtifactMetadata = {
@@ -48,8 +67,8 @@ object ArtifactTransformer {
   }
 
 
-  def transformResults(hits: SearchHits): Array[Artifact] = {
-    hits.hits.map(h => transformResult(h))
+  def transformResults(hits: SearchHits): SearchResults = {
+    SearchResults(hits.total, hits.hits.map(h => transformResult(h)))
   }
 
   val baseFields = Seq("source", "discovered", "identifier.groupId", "identifier.artifactId", "identifier.version")

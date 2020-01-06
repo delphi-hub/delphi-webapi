@@ -1,4 +1,4 @@
-// Copyright (C) 2018 The Delphi Team.
+// Copyright (C) 2019 The Delphi Team.
 // See the LICENCE file distributed with this work for additional
 // information regarding copyright ownership.
 //
@@ -13,7 +13,14 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
+package de.upb.cs.swt.delphi.webapi
 
-package de.upb.cs.swt.delphi.webapi.artifacts
+import spray.json.DefaultJsonProtocol
 
-case class Artifact(id: String, metadata: ArtifactMetadata, metricResults: Map[String, Int])
+case class Feature(name : String, description : String)
+case class InternalFeature(name : String, description: String, internalName : String)
+
+object FeatureJson extends DefaultJsonProtocol {
+  implicit val featureFormat = jsonFormat2(Feature)
+  implicit val internalFeatureFormat = jsonFormat3(InternalFeature)
+}

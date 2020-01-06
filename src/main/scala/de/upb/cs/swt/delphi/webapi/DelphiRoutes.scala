@@ -23,9 +23,11 @@ import akka.http.scaladsl.server.Directives._
 import akka.http.scaladsl.server.Route
 import akka.pattern.ask
 import akka.stream.scaladsl.Source
+import de.upb.cs.swt.delphi.core.model.ArtifactJson._
+import de.upb.cs.swt.delphi.webapi.search.SearchResultsJson._
+import de.upb.cs.swt.delphi.webapi.FeatureJson._
 import de.upb.cs.swt.delphi.webapi.IpLogActor._
 import de.upb.cs.swt.delphi.webapi.StatisticsJson._
-import de.upb.cs.swt.delphi.webapi.artifacts.ArtifactJson._
 import de.upb.cs.swt.delphi.webapi.search.QueryRequestJson._
 import de.upb.cs.swt.delphi.webapi.search.{QueryRequest, SearchError, SearchQuery}
 import spray.json._
@@ -71,27 +73,18 @@ class DelphiRoutes(requestLimiter: RequestLimitScheduler) extends JsonSupport wi
 
   private def features = {
     get {
-      parameter('pretty.?) { (pretty) =>
-        complete(
-          //TODO: Introduce failure concept for feature extractor
-          prettyPrint(pretty, featureExtractor.featureList.toJson)
-        )
-      }
+      complete(featureExtractor.featureList.toJson)
     }
   }
 
 
   private def statistics = {
     get {
-      parameter('pretty.?) { (pretty) =>
-        complete {
-          val result = new StatisticsQuery(configuration).retrieveStandardStatistics
-          result match {
-            case Some(stats) => {
-              prettyPrint(pretty, stats.toJson)
-            }
-            case _ => HttpResponse(StatusCodes.InternalServerError)
-          }
+      complete {
+        val result = new StatisticsQuery(configuration).retrieveStandardStatistics
+        result match {
+          case Some(stats) => stats.toJson
+          case _ => HttpResponse(StatusCodes.InternalServerError)
         }
       }
     }
@@ -99,38 +92,34 @@ class DelphiRoutes(requestLimiter: RequestLimitScheduler) extends JsonSupport wi
 
   private def retrieve(identifier: String): Route = {
     get {
-      parameter('pretty.?) { (pretty) =>
-        complete(
-          RetrieveQuery.retrieve(identifier) match {
-            case Some(result) => prettyPrint(pretty, result.toJson)
-            case None => HttpResponse(StatusCodes.NotFound)
-          }
-        )
-      }
+      complete(
+        RetrieveQuery.retrieve(identifier) match {
+          case Some(result) => result.toJson
+          case None => HttpResponse(StatusCodes.NotFound)
+        }
+      )
     }
   }
 
   def search: Route = {
     post {
-      parameter('pretty.?) { (pretty) =>
-        entity(as[QueryRequest]) { input =>
-          log.info(s"Received search query: ${input.query}")
-          complete(
-            new SearchQuery(configuration, featureExtractor).search(input) match {
-              case Success(result) => prettyPrint(pretty, result.toJson)
-              case Failure(e) => {
-                e match {
-                  case se: SearchError => {
-                    se.toJson
-                  }
-                  case _ => {
-                    new SearchError("Search query failed").toJson
-                  }
+      entity(as[QueryRequest]) { input =>
+        log.info(s"Received search query: ${input.query}")
+        complete(
+          new SearchQuery(configuration, featureExtractor).search(input) match {
+            case Success(result) => result.toJson
+            case Failure(e) => {
+              e match {
+                case se: SearchError => {
+                  HttpResponse(StatusCodes.ServerError(StatusCodes.InternalServerError.intValue)(se.toJson.toString(), ""))
+                }
+                case _ => {
+                  HttpResponse(StatusCodes.ServerError(StatusCodes.InternalServerError.intValue)("Search query failed", ""))
                 }
               }
             }
-          )
-        }
+          }
+        )
       }
     }
   }

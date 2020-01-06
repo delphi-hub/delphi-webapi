@@ -15,10 +15,14 @@
 // limitations under the License.
 package de.upb.cs.swt.delphi.webapi.authorization
 
+import java.time.Clock
+
 import de.upb.cs.swt.delphi.webapi
 import pdi.jwt.{Jwt, JwtAlgorithm, JwtClaim}
 
 object AuthProvider {
+
+  implicit val clock: Clock = Clock.systemUTC
 
   def generateJwt(validFor: Long = 1, useGenericName: Boolean = false): String = {
     val claim = JwtClaim()
