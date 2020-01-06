@@ -24,6 +24,7 @@ import akka.http.scaladsl.server.Route
 import akka.pattern.ask
 import akka.stream.scaladsl.Source
 import de.upb.cs.swt.delphi.core.model.ArtifactJson._
+import de.upb.cs.swt.delphi.webapi.search.SearchResultsJson._
 import de.upb.cs.swt.delphi.webapi.FeatureJson._
 import de.upb.cs.swt.delphi.webapi.IpLogActor._
 import de.upb.cs.swt.delphi.webapi.StatisticsJson._

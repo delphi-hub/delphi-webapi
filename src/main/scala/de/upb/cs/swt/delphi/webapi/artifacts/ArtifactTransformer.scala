@@ -25,6 +25,7 @@ import spray.json.JsArray
 import scala.io.Source
 import spray.json._
 import de.upb.cs.swt.delphi.webapi.FeatureJson._
+import de.upb.cs.swt.delphi.webapi.search.SearchResults
 
 object ArtifactTransformer {
   private lazy val internalFeatures = Source.fromResource("features.json")
@@ -66,8 +67,8 @@ object ArtifactTransformer {
   }
 
 
-  def transformResults(hits: SearchHits): Array[Artifact] = {
-    hits.hits.map(h => transformResult(h))
+  def transformResults(hits: SearchHits): SearchResults = {
+    SearchResults(hits.total, hits.hits.map(h => transformResult(h)))
   }
 
   val baseFields = Seq("source", "discovered", "identifier.groupId", "identifier.artifactId", "identifier.version")
