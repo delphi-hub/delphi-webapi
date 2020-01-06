@@ -240,14 +240,14 @@
     "name": "metrics.inheritancetree.small"
   },
   {
-    "description": "",
+    "description": "Augmented Type - Only abstract methods and three or more static final fields of the same type. Gil, Joseph and Itay Maman. “Micro patterns in Java code.” OOPSLA '05 (2005).",
     "internalName": "hermes.features.Augmented Type",
-    "name": "Augmented Type"
+    "name": "metrics.micropatterns.augmentedtype"
   },
   {
-    "description": "",
+    "description": "Access to environment variables. Ben Hermann, Michael Reif, Michael Eichberg, and Mira Mezini. 2015. Getting to know you: towards a capability model for Java. In Proceedings of the 2015 10th Joint Meeting on Foundations of Software Engineering (ESEC/FSE 2015).",
     "internalName": "hermes.features.Environment",
-    "name": "Environment"
+    "name": "metrics.capabilities.environment"
   },
   {
     "description": "",
@@ -271,7 +271,7 @@
   },
   {
     "description": "",
-    "internalName": "Class File JDK 1.1 (JDK 1.0.2)",
+    "internalName": "hermes.features.Class File\nJDK 1.1 (JDK 1.0.2)",
     "name": "metrics.classversion.1.1"
   },
   {
@@ -287,22 +287,32 @@
   {
     "description": "",
     "internalName": "hermes.features.custom ClassLoader implementation",
-    "name": "custom ClassLoader implementation"
+    "name": "metrics.api.classloader.customimplementation"
   },
   {
-    "description": "",
+    "description": "Number of bridge methods.",
     "internalName": "hermes.features.bridge methods",
-    "name": "bridge methods"
+    "name": "metrics.methods.bridge"
   },
   {
-    "description": "",
+    "description": "Number of synchronized methods.",
+    "internalName": "hermes.features.synchronized methods",
+    "name": "metrics.methods.synchronized"
+  },
+  {
+    "description": "Module Declarations (Java >9)",
     "internalName": "hermes.features.module (Java >9)",
-    "name": "metrics.java9.modules"
+    "name": "metrics.classtypes.moduledeclaration"
   },
   {
-    "description": "",
+    "description": "Canopy - A class with exactly one instance field that it assigned exactly once, during instance construction. Gil, Joseph and Itay Maman. “Micro patterns in Java code.” OOPSLA '05 (2005).",
     "internalName": "hermes.features.Canopy",
-    "name": "Canopy"
+    "name": "metrics.micropatterns.canopy"
+  },
+  {
+    "description": "Pool - A class which declares only static final fields, but no methods. “Micro patterns in Java code.” OOPSLA '05 (2005).",
+    "internalName": "hermes.features.Pool",
+    "name": "metrics.micropatterns.pool"
   },
   {
     "description": "",
@@ -310,119 +320,129 @@
     "name": "metrics.unusedfield.public"
   },
   {
-    "description": "",
+    "description": "Number of mutually-recursive data structures involving 2 types",
     "internalName": "hermes.features.Mutually-recursive Data Structure\n2 Types",
-    "name": "Mutually-recursive Data Structure\n2 Types"
+    "name": "metrics.rds.2"
   },
   {
-    "description": "",
+    "description": "Number of mutually-recursive data structures involving more than 4 types",
     "internalName": "hermes.features.Mutually-recursive Data Structure\nmore than 4 Types",
-    "name": "Mutually-recursive Data Structure\nmore than 4 Types"
+    "name": "metrics.rds.>4"
   },
   {
-    "description": "",
+    "description": "Calls to getUnsafe. Luis Mastrangelo, et al. 2015. Use at your own risk: the Java unsafe API in the wild. OOPSLA 2015",
+    "internalName": "hermes.features.sun.misc.Unsafe\nsun.misc.Unsafe getUnsafe()",
+    "name": "metrics.api.unsafe.getunsafe"
+  },
+  {
+    "description": "The Array group contains methods and fields for computing relative addresses of array elements. The fields were added as a simpler and potentially faster alternative in a more recent version of Unsafe. The value of all fields in this group are constants initialized with the result of a call to either arrayBaseOffset or arrayIndexScale in the Array group. Luis Mastrangelo, et al. 2015. Use at your own risk: the Java unsafe API in the wild. OOPSLA 2015",
     "internalName": "hermes.features.Unsafe - Array",
     "name": "metrics.api.unsafe.array"
   },
   {
-    "description": "",
+    "description": "The Ordered Put group has methods to store to a Java variable without emitting any memory barrier but guaranteeing no reordering across the store. Luis Mastrangelo, et al. 2015. Use at your own risk: the Java unsafe API in the wild. OOPSLA 2015",
     "internalName": "hermes.features.Unsafe - Ordered Put",
     "name": "metrics.api.unsafe.orderedput"
   },
   {
-    "description": "",
+    "description": "The Heap group methods are used to directly access memory in the Java heap. The Heap Get and Heap Put groups allow the developer to load and store a Java variable. Luis Mastrangelo, et al. 2015. Use at your own risk: the Java unsafe API in the wild. OOPSLA 2015",
     "internalName": "hermes.features.Unsafe - Heap",
     "name": "metrics.api.unsafe.heap"
   },
   {
-    "description": "",
+    "description": "Methods of the Offset group are used to compute the location of fields within Java objects. The offsets are used in calls to many other sun.misc.Unsafe methods, for instance those in the Heap Get, Heap Put, and the CAS groups. Luis Mastrangelo, et al. 2015. Use at your own risk: the Java unsafe API in the wild. OOPSLA 2015",
     "internalName": "hermes.features.Unsafe - Offset",
     "name": "metrics.api.unsafe.offset"
   },
   {
-    "description": "",
+    "description": "The CAS group contains methods to atomically compare-and-swap a Java variable. These operations are implemented using processor-specific atomic instructions. For instance, on x86 architectures, compareAndSwapInt is implemented using the CMPXCHG machine instruction. Luis Mastrangelo, et al. 2015. Use at your own risk: the Java unsafe API in the wild. OOPSLA 2015",
     "internalName": "hermes.features.Unsafe - compareAndSwap",
     "name": "metrics.api.unsafe.compareAndSwap"
   },
   {
-    "description": "",
+    "description": "The Off-Heap group provides access to unmanaged memory, enabling explicit memory management. Similarly to the Heap Get and Heap Put groups, the OffHeap Get and Off-Heap Put groups allow the developer to load and store values in Off-Heap memory. The usage of these methods is non-negligible, with getByte and putByte dominating the rest. The value of the ADDRESS SIZE field is the result of the method addressSize(). Luis Mastrangelo, et al. 2015. Use at your own risk: the Java unsafe API in the wild. OOPSLA 2015",
     "internalName": "hermes.features.Unsafe - Off-Heap",
     "name": "metrics.api.unsafe.offheap"
   },
   {
-    "description": "",
+    "description": "The Heap group methods are used to directly access memory in the Java heap. The Heap Get and Heap Put groups allow the developer to load and store a Java variable. Luis Mastrangelo, et al. 2015. Use at your own risk: the Java unsafe API in the wild. OOPSLA 2015",
     "internalName": "hermes.features.Unsafe - Heap Get",
     "name": "metrics.api.unsafe.heapget"
   },
   {
-    "description": "",
+    "description": "The methods of the Fence group provide memory fences to ensure loads and stores are visible to other threads. These methods are implemented using processor-specific instructions. Luis Mastrangelo, et al. 2015. Use at your own risk: the Java unsafe API in the wild. OOPSLA 2015",
     "internalName": "hermes.features.Unsafe - Fence",
     "name": "metrics.api.unsafe.fence"
   },
   {
-    "description": "",
+    "description": "The Fetch & Add group, like the CAS group, allows the programmer to atomically update a Java variable. This group of methods was also added recently in Java 8. Luis Mastrangelo, et al. 2015. Use at your own risk: the Java unsafe API in the wild. OOPSLA 2015",
     "internalName": "hermes.features.Unsafe - Fetch & Add",
     "name": "metrics.api.unsafe.fetchAndAdd"
   },
   {
-    "description": "",
+    "description": "The Alloc group contains only the allocateInstance method, which allows the developer to allocate a Java object without executing a constructor. Luis Mastrangelo, et al. 2015. Use at your own risk: the Java unsafe API in the wild. OOPSLA 2015",
     "internalName": "hermes.features.Unsafe - Alloc",
     "name": "metrics.api.unsafe.alloc"
   },
   {
-    "description": "",
+    "description": "The throwException method is contained in the Throw group, and allows one to throw checked exceptions without declaring them in the throws clause. Luis Mastrangelo, et al. 2015. Use at your own risk: the Java unsafe API in the wild. OOPSLA 2015",
     "internalName": "hermes.features.Unsafe - Throw",
     "name": "metrics.api.unsafe.throw"
   },
   {
-    "description": "",
+    "description": "The Heap group methods are used to directly access memory in the Java heap. The Heap Get and Heap Put groups allow the developer to load and store a Java variable. Luis Mastrangelo, et al. 2015. Use at your own risk: the Java unsafe API in the wild. OOPSLA 2015",
     "internalName": "hermes.features.Unsafe - Heap Put",
     "name": "metrics.api.unsafe.heapput"
   },
   {
-    "description": "",
+    "description": "The Volatile Get and Volatile Put groups allow the developer to store a value in a Java variable with volatile semantics. Luis Mastrangelo, et al. 2015. Use at your own risk: the Java unsafe API in the wild. OOPSLA 2015",
     "internalName": "hermes.features.Unsafe - Volatile Put",
     "name": "metrics.api.unsafe.volatileput"
   },
   {
-    "description": "",
+    "description": "Methods of the Class group are used to dynamically load and check Java classes. Luis Mastrangelo, et al. 2015. Use at your own risk: the Java unsafe API in the wild. OOPSLA 2015",
     "internalName": "hermes.features.Unsafe - Class",
     "name": "metrics.api.unsafe.class"
   },
   {
-    "description": "",
+    "description": "The Monitor group contains methods to explicitly manage Java monitors. Luis Mastrangelo, et al. 2015. Use at your own risk: the Java unsafe API in the wild. OOPSLA 2015",
     "internalName": "hermes.features.Unsafe - Monitor",
     "name": "metrics.api.unsafe.monitor"
   },
   {
-    "description": "",
+    "description": "The park and unpark methods are contained in the Park group. With them, it is possible to block and unblock a thread's execution. Luis Mastrangelo, et al. 2015. Use at your own risk: the Java unsafe API in the wild. OOPSLA 2015",
     "internalName": "hermes.features.Unsafe - Park",
     "name": "metrics.api.unsafe.park"
   },
   {
-    "description": "",
+    "description": "The Volatile Get and Volatile Put groups allow the developer to store a value in a Java variable with volatile semantics. Luis Mastrangelo, et al. 2015. Use at your own risk: the Java unsafe API in the wild. OOPSLA 2015",
     "internalName": "hermes.features.Unsafe - Volatile Get",
     "name": "metrics.api.unsafe.volatileget"
   },
   {
-    "description": "",
+    "description": "Non-functional interface with default methods (Java >8)",
     "internalName": "hermes.features.non-functional interface\nwith default methods (Java >8)",
-    "name": "non-functional interface\nwith default methods (Java >8)"
+    "name": "metrics.classtypes.non-functional.default"
   },
   {
-    "description": "",
+    "description": "Number of methods that neither return normally nor abnormally.",
     "internalName": "hermes.features.Method with Infinite Loop",
-    "name": "Method with Infinite Loop"
+    "name": "metrics.methods.infiniteloop"
   },
   {
-    "description": "",
+    "description": "Number of instance methods.",
     "internalName": "hermes.features.instance methods",
-    "name": "instance methods"
+    "name": "metrics.methods.instance"
+  },
+  {
+    "description": "Number of package visible fields only used by their defining type.",
+    "internalName": "hermes.features.package visible fields\nonly used by defining type",
+    "name": "metrics.fields.packagevisiblelocal"
   },
   {
     "description": "",
-    "internalName": "hermes.features.package visible fields\nonly used by defining type",
-    "name": "package visible fields\nonly used by defining type"
+    "internalName": "hermes.features.unused private fields",
+    "name": "metrics.unusedfield.private"
   },
   {
     "description": "",
@@ -465,54 +485,84 @@
     "name": "metrics.api.crypto.Certificates"
   },
   {
-    "description": "",
+    "description": "Joiner - An empty interface joining two or more superinterfaces. Gil, Joseph and Itay Maman. “Micro patterns in Java code.” OOPSLA '05 (2005).",
     "internalName": "hermes.features.Joiner",
-    "name": "Joiner"
+    "name": "metrics.micropatterns.joiner"
   },
   {
-    "description": "",
+    "description": "Pseudo Class - A class which can be rewritten as an interface: no concrete methods, only static fields. Gil, Joseph and Itay Maman. “Micro patterns in Java code.” OOPSLA '05 (2005).",
     "internalName": "hermes.features.Pseudo Class",
-    "name": "Pseudo Class"
+    "name": "metrics.micropatterns.pseudoclass"
   },
   {
-    "description": "",
+    "description": "Reflective accessibility changes via Field.setAccessible",
     "internalName": "hermes.features.makes fields accessible",
-    "name": "makes fields accessible"
+    "name": "metrics.api.reflection.makesfieldsaccessible"
   },
   {
-    "description": "",
+    "description": "Number of methods with a varargs parameter.",
     "internalName": "hermes.features.varargs methods",
-    "name": "varargs methods"
+    "name": "metrics.methods.varargs"
   },
   {
-    "description": "",
+    "description": "Function Pointer - A class with a single public instance method, but with no fields. Gil, Joseph and Itay Maman. “Micro patterns in Java code.” OOPSLA '05 (2005).",
     "internalName": "hermes.features.Function Pointer",
-    "name": "Function Pointer"
+    "name": "metrics.micropatterns.functionpointer"
   },
   {
-    "description": "",
+    "description": "Number of synthetic methods.",
     "internalName": "hermes.features.synthetic methods",
-    "name": "synthetic methods"
+    "name": "metrics.methods.synthetic"
   },
   {
-    "description": "",
+    "description": "State Machine - An interface whose methods accept no parameters. Gil, Joseph and Itay Maman. “Micro patterns in Java code.” OOPSLA '05 (2005).",
     "internalName": "hermes.features.State Machine",
-    "name": "State Machine"
+    "name": "metrics.micropatterns.statemachine"
   },
   {
-    "description": "",
-    "internalName": "hermes.features.java",
-    "name": "java"
+    "description": "Calls to MethodHandles.lookup",
+    "internalName": "hermes.features.java.lang.invoke.MethodHandles\nlookup",
+    "name": "metrics.api.reflection.MethodHandles.lookup"
   },
   {
-    "description": "",
+    "description": "Calls to MethodHandles.lookup",
+    "internalName": "hermes.features.java.lang.invoke.MethodHandles\npublicLookup",
+    "name": "metrics.api.reflection.MethodHandles.publicLookup"
+  },
+  {
+    "description": "Calls to java.lang.reflect.Method.invoke",
+    "internalName": "hermes.features.java.lang.reflect.Method\nObject invoke(Object,Object[])",
+    "name": "metrics.api.reflection.Method.invoke"
+  },
+  {
+    "description": "Calls to Proxy.newProxyInstance",
+    "internalName": "hermes.features.java.lang.reflect.Proxy\nnewProxyInstance",
+    "name": "metrics.api.reflection.Proxy.newProxyInstance"
+  },
+  {
+    "description": "Calls to Class.forName",
+    "internalName": "hermes.features.java.lang.Class\nforName",
+    "name": "metrics.api.reflection.Class.forName"
+  },
+  {
+    "description": "Call to MethodHandle.invoke*",
     "internalName": "hermes.features.method handle invocation",
-    "name": "method handle invocation"
+    "name": "metrics.api.reflection.methodhandleinvocation"
   },
   {
-    "description": "",
+    "description": "Call to DriverManager.getConnection",
+    "internalName": "hermes.features.java.sql.DriverManager\ngetConnection",
+    "name": "metrics.api.jdbc.DriverManager.getConnection"
+  },
+  {
+    "description": "Call to java.sql.Connection\nrollback",
+    "internalName": "hermes.features.java.sql.Connection\nrollback",
+    "name": "metrics.api.jdbc.Connection.rollback"
+  },
+  {
+    "description": "(Standard) interface.",
     "internalName": "hermes.features.(standard) interface",
-    "name": "(standard) interface"
+    "name": "metrics.classtypes.interface"
   },
   {
     "description": "",
@@ -520,9 +570,9 @@
     "name": "metrics.unusedfield.protected"
   },
   {
-    "description": "",
+    "description": "Restricted Creation - A class with no public constructors, and at least one static field of the same type as the class. Gil, Joseph and Itay Maman. “Micro patterns in Java code.” OOPSLA '05 (2005).",
     "internalName": "hermes.features.Restricted Creation",
-    "name": "Restricted Creation"
+    "name": "metrics.micropatterns.restrictedcreation"
   },
   {
     "description": "",
@@ -535,94 +585,94 @@
     "name": "metrics.api.threadgroup"
   },
   {
-    "description": "",
+    "description": "Cobol Like - A class with a single static method, but no instance members. Gil, Joseph and Itay Maman. “Micro patterns in Java code.” OOPSLA '05 (2005).",
     "internalName": "hermes.features.Cobol Like",
-    "name": "Cobol Like"
+    "name": "metrics.micropatterns.cobollike"
   },
   {
-    "description": "",
+    "description": "Overrider - A class in which all methods override inherited, non-abstract methods. Gil, Joseph and Itay Maman. “Micro patterns in Java code.” OOPSLA '05 (2005).",
     "internalName": "hermes.features.Overrider",
-    "name": "Overrider"
+    "name": "metrics.micropatterns.overrider"
   },
   {
-    "description": "",
+    "description": "The Misc group contains the method getLoadAverage, to get the load average in the operating system run queue assigned to the available processors. Luis Mastrangelo, et al. 2015. Use at your own risk: the Java unsafe API in the wild. OOPSLA 2015.",
     "internalName": "hermes.features.Misc",
-    "name": "Misc"
+    "name": "metrics.api.unsafe.misc"
   },
   {
-    "description": "",
+    "description": "Non-functional interface with static methods (Java >8)",
     "internalName": "hermes.features.non-functional interface\nwith static methods (Java >8)",
-    "name": "non-functional interface\nwith static methods (Java >8)"
+    "name": "metrics.classtypes.non-functional.static"
   },
   {
-    "description": "",
+    "description": "Number of mutually-recursive data structures involving 3 types",
     "internalName": "hermes.features.Mutually-recursive Data Structure\n3 Types",
-    "name": "Mutually-recursive Data Structure\n3 Types"
+    "name": "metrics.rds.3"
   },
   {
-    "description": "",
+    "description": "Box - A class which has exactly one, mutable, instance field. Gil, Joseph and Itay Maman. “Micro patterns in Java code.” OOPSLA '05 (2005).",
     "internalName": "hermes.features.Box",
-    "name": "Box"
+    "name": "metrics.micropatterns.box"
   },
   {
-    "description": "",
+    "description": "Stateless - A class with no fields, other than static final ones. Gil, Joseph and Itay Maman. “Micro patterns in Java code.” OOPSLA '05 (2005).",
     "internalName": "hermes.features.Stateless",
-    "name": "Stateless"
+    "name": "metrics.micropatterns.stateless"
   },
   {
-    "description": "",
-    "internalName": "hermes.features.Nontrivial Class",
-    "name": "Nontrivial Class"
+    "description": "Nontrivial reflection via Class.forName.",
+    "internalName": "hermes.features.Nontrivial Class.forName Usage",
+    "name": "metrics.reflections.nontrivial"
   },
   {
     "description": "",
     "internalName": "hermes.features.(concrete) classes",
-    "name": "(concrete) classes"
+    "name": "metrics.classtypes.concrete"
   },
   {
-    "description": "",
+    "description": "Calls to Instrumentation.getAllLoadedClasses, getInitiatedClasses, or getObjectSize.",
     "internalName": "hermes.features.retrieve classes information",
-    "name": "retrieve classes information"
+    "name": "metrics.api.instrumentation.retrieveclassesinformation"
   },
   {
-    "description": "",
+    "description": "Methods with Local Variable Table",
     "internalName": "hermes.features.Method With\nLocal Variable Table",
-    "name": "Method With\nLocal Variable Table"
+    "name": "metrics.debug.methodswithlvt"
   },
   {
-    "description": "",
+    "description": "Class File With Source Attribute",
     "internalName": "hermes.features.Class File With\nSource Attribute",
-    "name": "Class File With\nSource Attribute"
+    "name": "metrics.debug.classsourceattribute"
   },
   {
-    "description": "",
+    "description": "Accessing resources via a ClassLoader.",
     "internalName": "hermes.features.accessing resources",
-    "name": "accessing resources"
+    "name": "metrics.api.classloader.resourceaccess"
   },
   {
-    "description": "",
+    "description": "Immutable - A class with several instance fields, which are assigned exactly once, during instance construction. Gil, Joseph and Itay Maman. “Micro patterns in Java code.” OOPSLA '05 (2005).",
     "internalName": "hermes.features.Immutable",
-    "name": "Immutable"
+    "name": "metrics.micropatterns.immutable"
   },
   {
-    "description": "",
+    "description": "Number of static initializer methods.",
     "internalName": "hermes.features.static initializers",
-    "name": "static initializers"
+    "name": "metrics.methods.staticinitializers"
   },
   {
-    "description": "",
+    "description": "Number of methods that only return abnormally.",
     "internalName": "hermes.features.Never Returns Normally",
-    "name": "Never Returns Normally"
+    "name": "metrics.methods.neverreturnsnormally"
   },
   {
-    "description": "",
+    "description": "Data Manager - A class where all methods are either setters or getters. Gil, Joseph and Itay Maman. “Micro patterns in Java code.” OOPSLA '05 (2005).",
     "internalName": "hermes.features.Data Manager",
-    "name": "Data Manager"
+    "name": "metrics.micropatterns.datamanager"
   },
   {
-    "description": "",
+    "description": "Number of public fields only used by their definining type.",
     "internalName": "hermes.features.public fields\nonly used by defininig type ",
-    "name": "public fields\nonly used by defininig type "
+    "name": "metrics.fields.publicvisiblelocal"
   },
   {
     "description": "",
@@ -630,254 +680,264 @@
     "name": "sun"
   },
   {
-    "description": "",
+    "description": "Object-based Thread Notification (Object.notify, notifyAll, or wait).",
     "internalName": "hermes.features.Object-based Thread Notification",
-    "name": "Object-based Thread Notification"
+    "name": "metrics.api.threadnotificiation"
   },
   {
     "description": "",
     "internalName": "hermes.features.abstract classes",
-    "name": "abstract classes"
+    "name": "metrics.classtypes.abstract"
   },
   {
-    "description": "",
+    "description": "Usage of methods to retrieve the system class loader.",
     "internalName": "hermes.features.Retrieving the SystemClassLoader",
-    "name": "Retrieving the SystemClassLoader"
+    "name": "metrics.api.classloader.SystemClassLoader"
   },
   {
-    "description": "",
+    "description": "Taxonomy - An empty interface extending another interface. Gil, Joseph and Itay Maman. “Micro patterns in Java code.” OOPSLA '05 (2005).",
     "internalName": "hermes.features.Taxonomy",
-    "name": "Taxonomy"
+    "name": "metrics.micropatterns.taxonomy"
   },
   {
-    "description": "",
+    "description": "Record - A class in which all fields are public, no declared methods. Gil, Joseph and Itay Maman. “Micro patterns in Java code.” OOPSLA '05 (2005).",
     "internalName": "hermes.features.Record",
-    "name": "Record"
+    "name": "metrics.micropatterns.record"
   },
   {
     "description": "",
     "internalName": "hermes.features.marker interfaces",
-    "name": "marker interfaces"
+    "name": "metrics.classtypes.markerinterfaces"
   },
   {
-    "description": "",
+    "description": "Methods with Line Number Table",
     "internalName": "hermes.features.Method With\nLine Number Table",
-    "name": "Method With\nLine Number Table"
+    "name": "metrics.debug.methodswithlnt"
   },
   {
-    "description": "",
+    "description": "Sink - A class whose methods do not propagate calls to any other class. Gil, Joseph and Itay Maman. “Micro patterns in Java code.” OOPSLA '05 (2005).",
     "internalName": "hermes.features.Sink",
-    "name": "Sink"
+    "name": "metrics.micropatterns.sink"
   },
   {
-    "description": "",
+    "description": "Calls to Instrumentation.appendToBootstrapClassLoaderSearch or appendToSystemClassLoaderSearch.",
     "internalName": "hermes.features.appending class loader search",
-    "name": "appending class loader search"
+    "name": "metrics.api.instrumentation.appendingclassloadersearch"
   },
   {
-    "description": "",
+    "description": "Reflective accessibility changes via Method.setAccessible or Constructior.setAccessible.",
     "internalName": "hermes.features.makes methods or constructors accessible",
-    "name": "makes methods or constructors accessible"
+    "name": "metrics.api.reflection.makesmethodsaccessible"
   },
   {
-    "description": "",
+    "description": "Field reads via the Reflection API",
     "internalName": "hermes.features.reflective field read",
-    "name": "reflective field read"
+    "name": "metrics.api.reflection.fieldread"
   },
   {
     "description": "",
     "internalName": "hermes.features.enumerations",
-    "name": "enumerations"
+    "name": "metrics.classtypes.enumerations"
   },
   {
-    "description": "",
+    "description": "Simple functional interfaces (single abstract method (SAM) interface).",
     "internalName": "hermes.features.simple functional interfaces\n(single abstract method (SAM) interface)",
-    "name": "simple functional interfaces\n(single abstract method (SAM) interface)"
+    "name": "metrics.classtypes.sam"
   },
   {
-    "description": "",
+    "description": "Usage of the Sound API. Ben Hermann, Michael Reif, Michael Eichberg, and Mira Mezini. 2015. Getting to know you: towards a capability model for Java. In Proceedings of the 2015 10th Joint Meeting on Foundations of Software Engineering (ESEC/FSE 2015).",
     "internalName": "hermes.features.Sound",
-    "name": "Sound"
+    "name": "metrics.capabilities.sound"
   },
   {
     "description": "",
     "internalName": "hermes.features.annotations",
-    "name": "annotations"
+    "name": "metrics.classtypes.annotations"
   },
   {
-    "description": "",
+    "description": "Trait - An abstract class which has no state. Gil, Joseph and Itay Maman. “Micro patterns in Java code.” OOPSLA '05 (2005).",
     "internalName": "hermes.features.Trait",
-    "name": "Trait"
+    "name": "metrics.micropatterns.trait"
   },
   {
-    "description": "",
+    "description": "Usage of the JavaFX API.",
     "internalName": "hermes.features.JavaFX",
-    "name": "JavaFX"
+    "name": "metrics.api.gui.javafx"
   },
   {
     "description": "",
-    "internalName": "hermes.features.javax",
-    "name": "javax"
+    "internalName": "hermes.features.javax.crypto.Cipher\ngetInstance",
+    "name": "metrics.api.crypto.Cipher.getInstance"
   },
   {
-    "description": "",
+    "description": "Compound Box - A class with exactly one non primitive instance field. Gil, Joseph and Itay Maman. “Micro patterns in Java code.” OOPSLA '05 (2005).",
     "internalName": "hermes.features.Compound Box",
-    "name": "Compound Box"
+    "name": "metrics.micropatterns.compoundbox"
   },
   {
-    "description": "",
+    "description": "Common State - A class in which all fields are static. Gil, Joseph and Itay Maman. “Micro patterns in Java code.” OOPSLA '05 (2005).",
     "internalName": "hermes.features.Common State",
-    "name": "Common State"
+    "name": "metrics.micropatterns.commonstate"
   },
   {
-    "description": "",
+    "description": "Designator - An interface with absolutely no members. Gil, Joseph and Itay Maman. “Micro patterns in Java code.” OOPSLA '05 (2005).",
     "internalName": "hermes.features.Designator",
-    "name": "Designator"
+    "name": "metrics.micropatterns.designator"
   },
   {
-    "description": "",
+    "description": "Usage of the AWT GUI API.",
     "internalName": "hermes.features.AWT",
-    "name": "AWT"
+    "name": "metrics.api.gui.awt"
   },
   {
-    "description": "",
+    "description": "Usage of the SWT GUI API.",
     "internalName": "hermes.features.SWT",
-    "name": "SWT"
+    "name": "metrics.api.gui.swt"
   },
   {
-    "description": "",
-    "internalName": "hermes.features.Trivial Class",
-    "name": "Trivial Class"
+    "description": "Trivial reflection via Class.forName.",
+    "internalName": "hermes.features.Trivial Class.forName Usage",
+    "name": "metrics.reflections.trivial"
   },
   {
-    "description": "",
-    "internalName": "hermes.features.creation and execution of\njava",
-    "name": "creation and execution of\njava"
+    "description": "Creation and execution of java.sql.CallableStatement.",
+    "internalName": "hermes.features.creation and execution of\njava.sql.CallableStatement",
+    "name": "metrics.api.jdbc.CallableStatement"
   },
   {
-    "description": "",
+    "description": "Creation and execution of java.sql.PreparedStatement.",
+    "internalName": "hermes.features.creation and execution of\njava.sql.PreparedStatement",
+    "name": "metrics.api.jdbc.PreparedStatement"
+  },
+  {
+    "description": "Creation and execution of java.sql.Statement.",
+    "internalName": "hermes.features.creation and execution of\njava.sql.Statement",
+    "name": "metrics.api.jdbc.Statement"
+  },
+  {
+    "description": "Function Object - A class with a single public instance method, and at least one instance field. Gil, Joseph and Itay Maman. “Micro patterns in Java code.” OOPSLA '05 (2005).",
     "internalName": "hermes.features.Function Object",
-    "name": "Function Object"
+    "name": "metrics.micropatterns.functionobject"
   },
   {
-    "description": "",
+    "description": "Number of constructor methods.",
     "internalName": "hermes.features.constructors",
-    "name": "constructors"
+    "name": "metrics.methods.constructors"
   },
   {
-    "description": "",
+    "description": "Methods With Local Variable Type Table",
     "internalName": "hermes.features.Method With\nLocal Variable Type Table",
-    "name": "Method With\nLocal Variable Type Table"
+    "name": "metrics.debug.methodswithlvtt"
   },
   {
-    "description": "",
+    "description": "Usage of methods to retrieve some class loader.",
     "internalName": "hermes.features.Retrieving some ClassLoader",
-    "name": "Retrieving some ClassLoader"
+    "name": "metrics.api.classloader.retrieveclassLoader"
   },
   {
-    "description": "",
+    "description": "Sampler - A class with one or more public constructors, and at least one static field of the same type as the class. Gil, Joseph and Itay Maman. “Micro patterns in Java code.” OOPSLA '05 (2005).",
     "internalName": "hermes.features.Sampler",
-    "name": "Sampler"
+    "name": "metrics.micropatterns.sampler"
   },
   {
-    "description": "",
+    "description": "Implementor - A concrete class, where all the methods override inherited abstract methods. Gil, Joseph and Itay Maman. “Micro patterns in Java code.” OOPSLA '05 (2005).",
     "internalName": "hermes.features.Implementor",
-    "name": "Implementor"
+    "name": "metrics.micropatterns.implementor"
   },
   {
-    "description": "",
+    "description": "Field writes via the Reflection API",
     "internalName": "hermes.features.reflective field write",
-    "name": "reflective field write"
+    "name": "metrics.api.reflection.fieldwrite"
   },
   {
-    "description": "",
+    "description": "Instance creation via the Reflection API",
     "internalName": "hermes.features.reflective instance creation",
-    "name": "reflective instance creation"
+    "name": "metrics.api.reflection.instancecreation"
   },
   {
-    "description": "",
+    "description": "Number of self-recursive data structures.",
     "internalName": "hermes.features.Self-recursive Data Structure",
-    "name": "Self-recursive Data Structure"
+    "name": "metrics.rds.self"
   },
   {
-    "description": "",
+    "description": "Number of protected fields only used by their defining type.",
     "internalName": "hermes.features.protected fields\nonly used by defining type",
-    "name": "protected fields\nonly used by defining type"
+    "name": "metrics.fieldds.protectedvisiblelocal"
   },
   {
-    "description": "",
+    "description": "Number of mutually-recursive data structures involving 4 types",
     "internalName": "hermes.features.Mutually-recursive Data Structure\n4 Types",
-    "name": "Mutually-recursive Data Structure\n4 Types"
+    "name": "metrics.rds.4"
   },
   {
-    "description": "",
+    "description": "Usage of the process capability. Ben Hermann, Michael Reif, Michael Eichberg, and Mira Mezini. 2015. Getting to know you: towards a capability model for Java. In Proceedings of the 2015 10th Joint Meeting on Foundations of Software Engineering (ESEC/FSE 2015).",
     "internalName": "hermes.features.Process",
-    "name": "Process"
+    "name": "metrics.capabilities.process"
   },
   {
-    "description": "",
+    "description": "Usage of the JVM exit capability. Ben Hermann, Michael Reif, Michael Eichberg, and Mira Mezini. 2015. Getting to know you: towards a capability model for Java. In Proceedings of the 2015 10th Joint Meeting on Foundations of Software Engineering (ESEC/FSE 2015).",
     "internalName": "hermes.features.JVM exit",
-    "name": "JVM exit"
+    "name": "metrics.capabilities.jvmexit"
   },
   {
-    "description": "",
+    "description": "Number of static methods (not including static initializers)",
     "internalName": "hermes.features.static methods\n(not including static initializers)",
-    "name": "static methods\n(not including static initializers)"
+    "name": "metrics.methods.static"
   },
   {
-    "description": "",
+    "description": "Pure Type - A class with only abstract methods, and no static members, and no fields. Gil, Joseph and Itay Maman. “Micro patterns in Java code.” OOPSLA '05 (2005).",
     "internalName": "hermes.features.Pure Type",
-    "name": "Pure Type"
+    "name": "metrics.micropatterns.puretype"
   },
   {
-    "description": "",
+    "description": "Extender - A class which extends the inherited protocol, without overriding any methods. Gil, Joseph and Itay Maman. “Micro patterns in Java code.” OOPSLA '05 (2005).",
     "internalName": "hermes.features.Extender",
-    "name": "Extender"
+    "name": "metrics.micropatterns.extender"
   },
   {
-    "description": "",
+    "description": "Reflective API calls to make an AccessibleObject accessible (exact type unknown).",
     "internalName": "hermes.features.makes an AccessibleObject accessible\n(exact type unknown)",
-    "name": "makes an AccessibleObject accessible\n(exact type unknown)"
+    "name": "metrics.api.reflection.makeaccessibleobjectaccessible"
   },
   {
-    "description": "",
+    "description": "Number of native methods.",
     "internalName": "hermes.features.native methods",
-    "name": "native methods"
+    "name": "metrics.methods.native"
   },
   {
-    "description": "",
+    "description": "Outline - A class where at least two methods invoke an abstract method on this. Gil, Joseph and Itay Maman. “Micro patterns in Java code.” OOPSLA '05 (2005).",
     "internalName": "hermes.features.Outline",
-    "name": "Outline"
+    "name": "metrics.micropatterns.outline"
   },
   {
-    "description": "",
+    "description": "Usage of network capabilities. Ben Hermann, Michael Reif, Michael Eichberg, and Mira Mezini. 2015. Getting to know you: towards a capability model for Java. In Proceedings of the 2015 10th Joint Meeting on Foundations of Software Engineering (ESEC/FSE 2015).",
     "internalName": "hermes.features.Network sockets",
-    "name": "Network sockets"
+    "name": "metrics.capabilities.network"
   },
   {
-    "description": "",
+    "description": "Usage of the Swing GUI API.",
     "internalName": "hermes.features.Swing",
-    "name": "Swing"
+    "name": "metrics.api.gui.swing"
   },
   {
-    "description": "",
+    "description": "Calls to Instrumentation.retransformClasses, addTransformer, isModifiableClass, isRetransformClassesSupported, isRedefineClassesSupported, or redefineClasses.",
     "internalName": "hermes.features.class file retransformation",
-    "name": "class file retransformation"
+    "name": "metrics.api.instrumentation.classfileretransformation"
   },
   {
-    "description": "",
+    "description": "Calls to ClassLoader.defineClass or definePackage.",
     "internalName": "hermes.features.define new classes/packages",
-    "name": "define new classes/packages"
+    "name": "metrics.api.classloader.definenewclassorpackage"
   },
   {
-    "description": "",
+    "description": "Calls to Instrumentation.setNativeMethodPrefix or isNativeMethodPrefixSupported.",
     "internalName": "hermes.features.instrumenting native methods",
-    "name": "instrumenting native methods"
+    "name": "metrics.api.instrumentation.nativemethods"
   },
   {
-    "description": "",
+    "description": "Usages of dynamic native library loading. Ben Hermann, Michael Reif, Michael Eichberg, and Mira Mezini. 2015. Getting to know you: towards a capability model for Java. In Proceedings of the 2015 10th Joint Meeting on Foundations of Software Engineering (ESEC/FSE 2015).",
     "internalName": "hermes.features.Native Libraries",
-    "name": "Native Libraries"
+    "name": "metrics.capabilities.nativelibraryloading"
   },
   {
     "description": "",
@@ -1888,5 +1948,15 @@
     "description": "",
     "internalName": "hermes.features.ldc2_w (opcode:20)",
     "name": "metrics.bytecode.ldc2_w"
+  },
+  {
+    "description": "Calls to java.lang.System.getSecurityManager",
+    "internalName": "hermes.features.java.lang.System\ngetSecurityManager",
+    "name": "metrics.security.getSecurityManager"
+  },
+  {
+    "description": "Calls to java.lang.System.setSecurityManager",
+    "internalName": "hermes.features.java.lang.System\nsetSecurityManager",
+    "name": "metrics.security.setSecurityManager"
   }
 ]
