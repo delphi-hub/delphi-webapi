@@ -116,7 +116,7 @@ class DelphiRoutes(requestLimiter: RequestLimitScheduler) extends JsonSupport wi
                   HttpResponse(StatusCodes.ServerError(StatusCodes.InternalServerError.intValue)("Search query failed", ""))
                 }
               }
-            } 
+            }
           }
         )
       }
