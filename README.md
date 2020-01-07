@@ -1,4 +1,4 @@
-# Delphi Web API
+# Delphi Web API <img src="https://github.com/delphi-hub/delphi/raw/master/img/delphi.png" align="right" height=140/>
 
 The web API implementation for the Delphi platform.
 
