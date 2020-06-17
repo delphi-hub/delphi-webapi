@@ -12,7 +12,7 @@
   {
     "name" :  "maven.artifactId",
     "description": "ArtifactId of a Maven Package",
-    "internalName": "identifier.artifactid"
+    "internalName": "identifier.artifactId"
   },
   {
     "name" :  "maven.version",
@@ -673,11 +673,6 @@
     "description": "Number of public fields only used by their definining type.",
     "internalName": "hermes.features.public fields\nonly used by defininig type ",
     "name": "metrics.fields.publicvisiblelocal"
-  },
-  {
-    "description": "",
-    "internalName": "hermes.features.sun",
-    "name": "sun"
   },
   {
     "description": "Object-based Thread Notification (Object.notify, notifyAll, or wait).",
