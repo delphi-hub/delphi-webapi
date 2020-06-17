@@ -27,7 +27,7 @@ import de.upb.cs.swt.delphi.webapi.artifacts.ArtifactTransformer
 import de.upb.cs.swt.delphi.webapi.{Configuration, Feature, FeatureQuery, InternalFeature}
 import spray.json.JsArray
 
-import scala.io.Source
+import scala.io.{Codec, Source}
 import scala.util.{Failure, Success, Try}
 import spray.json._
 import de.upb.cs.swt.delphi.webapi.FeatureJson._
@@ -36,7 +36,7 @@ import de.upb.cs.swt.delphi.webapi.FeatureJson._
 class SearchQuery(configuration: Configuration, featureExtractor: FeatureQuery) {
   private val client = ElasticClient(configuration.elasticsearchClientUri)
 
-  lazy val internalFeatures = Source.fromResource("features.json")
+  lazy val internalFeatures = Source.fromResource("features.json")(Codec.UTF8)
     .getLines()
     .mkString("\n")
     .parseJson

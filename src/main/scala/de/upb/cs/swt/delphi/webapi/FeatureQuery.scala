@@ -24,13 +24,13 @@ import org.slf4j.LoggerFactory
 import spray.json._
 import de.upb.cs.swt.delphi.webapi.FeatureJson._
 
-import scala.io.Source
+import scala.io.{Codec, Source}
 
 class FeatureQuery(configuration: Configuration) {
   private val log = LoggerFactory.getLogger(this.getClass)
 
   lazy val featureList: Iterable[Feature] =
-    Source.fromResource("features.json")
+    Source.fromResource("features.json")(Codec.UTF8)
       .getLines()
       .mkString("\n")
       .parseJson

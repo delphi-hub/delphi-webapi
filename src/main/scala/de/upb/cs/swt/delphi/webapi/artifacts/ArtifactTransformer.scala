@@ -22,13 +22,13 @@ import de.upb.cs.swt.delphi.webapi.InternalFeature
 import org.joda.time.format.ISODateTimeFormat
 import spray.json.JsArray
 
-import scala.io.Source
+import scala.io.{Codec, Source}
 import spray.json._
 import de.upb.cs.swt.delphi.webapi.FeatureJson._
 import de.upb.cs.swt.delphi.webapi.search.SearchResults
 
 object ArtifactTransformer {
-  private lazy val internalFeatures = Source.fromResource("features.json")
+  private lazy val internalFeatures = Source.fromResource("features.json")(Codec.UTF8)
     .getLines()
     .mkString("\n")
     .parseJson
