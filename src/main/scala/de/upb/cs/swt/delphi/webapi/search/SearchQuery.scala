@@ -19,6 +19,7 @@ package de.upb.cs.swt.delphi.webapi.search
 import com.sksamuel.elastic4s.http.ElasticDsl._
 import com.sksamuel.elastic4s.http.search.SearchHits
 import com.sksamuel.elastic4s.http.{ElasticClient, RequestFailure, RequestSuccess}
+import com.sksamuel.elastic4s.searches.queries.matches.MatchQuery
 import com.sksamuel.elastic4s.searches.queries.{NoopQuery, Query}
 import de.upb.cs.swt.delphi.core.model._
 import de.upb.cs.swt.delphi.core.ql._
@@ -26,7 +27,7 @@ import de.upb.cs.swt.delphi.webapi.artifacts.ArtifactTransformer
 import de.upb.cs.swt.delphi.webapi.{Configuration, Feature, FeatureQuery, InternalFeature}
 import spray.json.JsArray
 
-import scala.io.Source
+import scala.io.{Codec, Source}
 import scala.util.{Failure, Success, Try}
 import spray.json._
 import de.upb.cs.swt.delphi.webapi.FeatureJson._
@@ -35,7 +36,7 @@ import de.upb.cs.swt.delphi.webapi.FeatureJson._
 class SearchQuery(configuration: Configuration, featureExtractor: FeatureQuery) {
   private val client = ElasticClient(configuration.elasticsearchClientUri)
 
-  lazy val internalFeatures = Source.fromResource("features.json")
+  lazy val internalFeatures = Source.fromResource("features.json")(Codec.UTF8)
     .getLines()
     .mkString("\n")
     .parseJson
@@ -112,7 +113,7 @@ class SearchQuery(configuration: Configuration, featureExtractor: FeatureQuery) 
           )
         )
       }
-      case EqualExpr(field, value) => matchQuery(externalToInternalFeature(field.fieldName), value)
+      case EqualExpr(field, value) =>   matchQuery(externalToInternalFeature(field.fieldName), value)
       case NotEqualExpr(field, value) => bool(not(matchQuery(externalToInternalFeature(field.fieldName), value)))
       case GreaterThanExpr(field, value) => rangeQuery(externalToInternalFeature(field.fieldName)).gt(value.toLong)
       case GreaterOrEqualExpr(field, value) => rangeQuery(externalToInternalFeature(field.fieldName)).gte(value.toLong)
