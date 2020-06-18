@@ -170,11 +170,14 @@ class SearchQuery(configuration: Configuration, featureExtractor: FeatureQuery) 
 
       parserResult match {
         case Failure(ParseError(Position(_, line, column), _, _)) =>
-          Failure(new InvalidQueryError(f"Syntax error in query (near line $line, colum $column)", query.query))
+          Failure(new InvalidQueryError(f"Syntax error in query (near line $line, column $column)", query.query))
         case Failure(e) =>
           Failure(e)
         case Success(parsedQuery) => {
           checkAndExecuteParsedQuery(parsedQuery, query.limit.getOrElse(defaultFetchSize)) match {
+            case Failure(e) if e.isInstanceOf[InvalidQueryFieldsError] =>
+              // Required to set a valid 'query' attribute to the error
+              Failure(new InvalidQueryFieldsError(query.query, e.asInstanceOf[InvalidQueryFieldsError].invalidFields))
             case Failure(e) => Failure(e)
             case Success(hits) => Success(ArtifactTransformer.transformResults(hits))
           }
