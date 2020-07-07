@@ -24,9 +24,28 @@ package object search {
 
   class SearchError(msg: String) extends RuntimeException(msg) with JsonSupport
 
+  class InvalidQueryError(val msg:String, val query: String) extends RuntimeException(msg) with JsonSupport
+
+  class InvalidQueryFieldsError(override val query: String, val invalidFields: Set[String])
+    extends InvalidQueryError("Query contained invalid query field names!", query)
+
   implicit val searchErrorWriter = new JsonWriter[SearchError] {
     override def write(obj: SearchError): JsValue = {
       JsObject("msg" -> JsString(obj.getMessage))
+    }
+  }
+
+  implicit val invalidQueryErrorWriter = new JsonWriter[InvalidQueryError] {
+    override def write(obj: InvalidQueryError): JsValue = {
+
+      obj match {
+        case error: InvalidQueryFieldsError =>
+          JsObject("msg" -> JsString(obj.getMessage), "query" -> JsString(obj.query),
+            "invalid_fields" -> JsArray(error.invalidFields.toVector.map(JsString(_))))
+        case _ =>
+          JsObject("msg" -> JsString(obj.getMessage), "query" -> JsString(obj.query))
+      }
+
     }
   }
 

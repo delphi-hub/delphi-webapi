@@ -31,6 +31,7 @@ import scala.io.{Codec, Source}
 import scala.util.{Failure, Success, Try}
 import spray.json._
 import de.upb.cs.swt.delphi.webapi.FeatureJson._
+import org.parboiled2.{ParseError, Position}
 
 
 class SearchQuery(configuration: Configuration, featureExtractor: FeatureQuery) {
@@ -52,7 +53,7 @@ class SearchQuery(configuration: Configuration, featureExtractor: FeatureQuery) 
     val publicFieldNames = internalFeatures.map(i => i.name)
     val invalidFields = fields.toSet.filter(f => !publicFieldNames.contains(f))
 
-    if (invalidFields.size > 0) return Failure(new IllegalArgumentException(s"Unknown field name(s) used. (${invalidFields.mkString(",")})"))
+    if (invalidFields.size > 0) return Failure(new InvalidQueryFieldsError(parsedQuery.toString, invalidFields))
 
     val translatedFields = fields.toSet.map(externalToInternalFeature(_))
     def getPrefix (in: String) : String = {
@@ -80,7 +81,7 @@ class SearchQuery(configuration: Configuration, featureExtractor: FeatureQuery) 
 
     response match {
       case RequestSuccess(_, body, _, result) => Success(result.hits)
-      case r => Failure(new IllegalArgumentException(r.toString))
+      case r => Failure(new SearchError(f"Failed to query database: ${r.toString}"))
     }
   }
 
@@ -166,10 +167,17 @@ class SearchQuery(configuration: Configuration, featureExtractor: FeatureQuery) 
     val validSize = size.exists(query.limit.getOrElse(defaultFetchSize) <= _)
     if (validSize) {
       val parserResult = new Syntax(query.query).QueryRule.run()
+
       parserResult match {
-        case Failure(e) => Failure(e)
+        case Failure(ParseError(Position(_, line, column), _, _)) =>
+          Failure(new InvalidQueryError(f"Syntax error in query (near line $line, column $column)", query.query))
+        case Failure(e) =>
+          Failure(e)
         case Success(parsedQuery) => {
           checkAndExecuteParsedQuery(parsedQuery, query.limit.getOrElse(defaultFetchSize)) match {
+            case Failure(e) if e.isInstanceOf[InvalidQueryFieldsError] =>
+              // Required to set a valid 'query' attribute to the error
+              Failure(new InvalidQueryFieldsError(query.query, e.asInstanceOf[InvalidQueryFieldsError].invalidFields))
             case Failure(e) => Failure(e)
             case Success(hits) => Success(ArtifactTransformer.transformResults(hits))
           }
@@ -177,7 +185,8 @@ class SearchQuery(configuration: Configuration, featureExtractor: FeatureQuery) 
       }
     }
     else {
-      val errorMsg = new SearchError(s"Query limit exceeded default limit:  ${query.limit}>${size}")
+      val errorMsg = new InvalidQueryError(
+        s"Query limit exceeded default limit:  ${query.limit.getOrElse(defaultFetchSize)} > ${size.getOrElse("None")}", query.query)
       Failure(errorMsg)
     }
   }
