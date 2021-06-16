@@ -1,0 +1,188 @@
+openapi: "3.0.0"
+info:
+  title: Delphi WebAPI REST Interface
+  description: This is the documentation for the *Delphi WebAPI Application*, which is part of the Delphi System for querying software artifacts based on statically extracted metrics.
+  version: 0.9.5
+paths:
+  /version:
+    get:
+      tags: ["Administration"]
+      summary: Retrieves the version of this WebAPI instance
+      responses:
+        '200':
+          description: "Success, returning WebAPI version"
+          content:
+            text/plain:
+              example: "0.9.5"
+  /features:
+    get:
+      tags: ["Queries"]
+      summary: Retrieves a list of all features available for querying
+      responses:
+        '200':
+          description: Success, returning feature list
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Feature"
+  
+  /statistics:
+    get:
+      tags: ["Administration"]
+      summary: Retrieves WebAPI statistics from the ElasticSearch backend
+      responses:
+        '200':
+          description: "Returns statistics regarding the number of indexed artifacts"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Statistics"
+        '500':
+          description: "Internal error while retrieving statistics from ElasticSearch"
+  
+  /search:
+    post:
+      tags: ["Queries"]
+      summary: Executes a search query and returns matching artifact identifiers
+      requestBody:
+        description: "Request containing the query that is to be executed"
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/QueryRequest"
+      responses:
+        '200':
+          description: "Result of the query execution"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SearchResults"
+        '500':
+          description: "Backend error while executing query"
+          content:
+            text/plain:
+              example: "Description of the server error"
+  
+  /retrieve/{identifier}:
+    get:
+      tags: ["Queries"]
+      summary: Retrieves artifact details for the given identifier
+      parameters:
+        - name: identifier
+          in: path
+          required: true
+          schema:
+            type: string
+            example: "com.typesafe.akka:akka-actor:1.2.3"
+      responses:
+        '200':
+          description: "Success, returning list of matching artifact information"
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Artifact"
+                
+        '404':
+          description: "Identifier not found on server"
+
+components:
+  schemas:
+    Feature:
+      required:
+        - name
+        - description
+      properties:
+        name:
+          type: string
+          description: "Name to reference this feature with"
+          example: "metrics.api.jdbc.PreparedStatement"
+        description:
+          type: string
+          description: "Description of the feature"
+          example: "Creation and execution of java.sql.PreparedStatement."
+    Statistics:
+      required:
+        - total
+        - hermesEnabled
+      properties:
+        total:
+          type: number
+          description: "Number of total entries in the index"
+          example: 6200000
+        hermesEnabled:
+          type: number
+          description: "Number of index entries that have metric results associated to them"
+          example: 3456000
+    SearchResults:
+      required:
+        - totalHits
+        - hits
+        - queried
+      properties:
+        totalHits:
+          type: number
+          description: "Number of hits for the query that was executed"
+          example: 3210
+        hits:
+          type: array
+          description: "List of query hits"
+          items:
+            $ref: "#/components/schemas/Artifact"
+        queried:
+          type: string
+          description: "Date and time the query was executed at as `ISO8601`"
+          example: "2004-06-14T23:34:30"
+    Artifact:
+      properties:
+        id:
+          type: string
+          description: "Unique identifier of a software artifact"
+          example: "com.typesafe.akka:akka-actor:1.2.3"
+        metadata:
+          $ref: "#/components/schemas/ArtifactMetadata"
+        metricResults:
+          type: object
+          description: Values for all metrics involved in the query
+          additionalProperties:
+            type: number
+          example: 
+            "metrics.api.jdbc.PreparedStatement": 3
+    ArtifactMetadata:
+      properties:
+        source:
+          type: string
+          description: "Source of the software artifact"
+          example: "Maven Central"
+        discovered:
+          type: string
+          description: "Date and time the artifact was discovered at as `ISO8601`"
+          example: "2004-06-14T23:34:30"
+        groupId:
+          type: string
+          description: "GroupId attribute of a Maven Artifact"
+          example: "com.typesafe.akka"
+        artifactId:
+          type: string
+          description: "ArtifactId attribut of a Maven Artifact"
+          example: "akka-actor"
+        version:
+          type: string
+          description: "Version attribute of a Maven Artifact"
+          example: "1.2.3"
+    QueryRequest:
+      required:
+        - query
+      properties:
+        query:
+          type: string
+          description: "The query to be executed"
+          example: '[source] = "Maven" && [metrics.librarymethods] = 0 && [metrics.projectpackages] > 10 && [metrics.projectpackages] < 50'
+        limit:
+          type: number
+          description: "Maximum number of identifiers to return"
+          example: 50
